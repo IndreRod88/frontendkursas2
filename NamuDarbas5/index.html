@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+    <meta charset=“UTF-8">
+    <title>NamuDarbas5</title>
+    <style>
+        * {
+            box-sizing:border-box;
+        }
+        .container{
+            max-width: 800px;
+            margin:auto;
+        }
+        header {
+            padding: 20px;
+            text-align:center;
+            background-color: black;
+            color: white;
+            width:100%;
+        }
+        aside {
+            border: solid 1px black;
+            padding: 20px;
+            float: left;
+            width: 25%;
+            height:400px;
+            background: white;
+        }
+        aside ul{
+            list-style: none;
+
+        }
+        ul a {
+            text-decoration: none;
+        }
+        article {
+            border: solid 1px black;
+            float: left;
+            padding: 20px;
+            width: 75%;
+            background-color: white;
+            height: 400px;
+        }
+        section{
+            width:100%;
+        }
+        section:after {
+            content: “”;
+            display: table;
+            clear: both;
+        }
+        footer{
+            padding: 20px;
+            background: black;
+            color: white;
+            text-align:center;
+            width: 100%;
+        }
+        #paragraph {
+            text-align: justify;
+            padding: 10px;
+        }
+        #title{
+            padding: 0px 10px 0px 10px;
+        }
+    </style>
+</head>
+<body>
+<div class=“container”>
+    <header>
+        <h1>City Gallery</h1>
+    </header>
+    <section>
+        <aside>
+            <ul>
+                <li><a href=“#”>London</a></li>
+                <li><a href=“#”>Paris</a></li>
+                <li><a href=“#”>Tokyo</a></li>
+            </ul>
+        </aside>
+        <article>
+            <h2 id=“title”>What is Lorem Ipsum?</h2>
+            <p id=“paragraph”> In publishing and graphic design, lorem ipsum is a placeholder text commonly used to
+                demonstrate the visual form of a document without relying on meaningful content (also called greeking).
+                Replacing the actual content with placeholder text allows designers to design the form of the content
+                before the content itself has been produced. The lorem ipsum text is typically a scrambled section of De
+                finibus bonorum et malorum, a 1st-century BC Latin text by Cicero, with words altered, added, and removed
+                to make it nonsensical, improper Latin. A variation of the ordinary lorem ipsum text has been used in
+                typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer
+                sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it
+                in graphics and word-processing templates for its desktop publishing program PageMaker.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Copyright @ W3schools.com</p>
+    </footer>
+</div>
+</body>
+</html>
