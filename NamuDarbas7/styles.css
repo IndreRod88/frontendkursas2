@@ -1,0 +1,14 @@
+.container{
+    border-width: 10px;
+    background-color: lightskyblue;
+    width: 100%;
+    overflow: auto;
+    display:block;
+    position:absolute;
+}
+.block {
+    background-color: blue;
+    width:25%;
+    height:20%;
+    margin: 10px;
+}
