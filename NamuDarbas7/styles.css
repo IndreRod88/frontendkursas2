@@ -28,6 +28,8 @@ body{
     height:25vh;
     width: 60vw;
 }
-a:hover {
+.block:hover {
     background-color: deeppink;
-}
+}.restangle:hover {
+     background-color: green;
+ }
