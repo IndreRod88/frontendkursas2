@@ -4,22 +4,30 @@ html {
     margin:0;
 }
 body{
-    width: calc(100% - 2vw);
+    width:calc(100% - 2vw);
     height:calc(100% - 2vw);
     margin:1vw;
 }
 .container{
     background-color: lightskyblue;
     width: 100%;
-    height: 50vh;
+    height: 62.5vh;
 }
 .block {
     background-color: blue;
-    width:20vh;
-    height:20vh;
-    margin: 0 0 5px 0;
+    width:24vh;
+    height:25vh;
+    margin: 0 0 1vh 0;
 }
-.stroked{
+.stroked {
     border:1vh solid black;
     margin: 1vw 0;
+}
+.restangle {
+    background-color: purple;
+    height:25vh;
+    width: 60vw;
+}
+a:hover {
+    background-color: deeppink;
 }
