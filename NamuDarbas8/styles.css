@@ -4,9 +4,9 @@
     -moz-border-radius: 300px;
     -webkit-border-radius: 300px;
     background-color: red;
-    position: absolute;
-    top:70px;
-    left:100px;
+    position: relative;
+    top:10px;
+    left:10px;
     opacity: 0.6;
 }
 .circle_green{
@@ -15,9 +15,9 @@
     -moz-border-radius: 300px;
     -webkit-border-radius: 300px;
     background-color: limegreen;
-    position: absolute;
-    top:260px;
-    left:10px;
+    position: relative;
+    top:-120px;
+    left:-110px;
     opacity: 0.6;
 }
 .circle_blue{
@@ -26,16 +26,15 @@
     -moz-border-radius: 300px;
     -webkit-border-radius: 300px;
     background-color: blue;
-    position: absolute;
-    top:260px;
-    left:200px;
+    position: relative;
+    top:-440px;
+    left:120px;
     opacity:0.6;
 }
 .block {
     background-color: #dddddd;
-    display:block;
-    width: 540px;
-    height: 540px;
+    width: 560px;
+    height: 560px;
 }
 .border_red {
     border: 10px solid;
