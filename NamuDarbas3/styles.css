@@ -8,15 +8,18 @@
     background-color: darkgrey;
     outline: 7px solid blue;
     vertical-align: middle;
+    position: relative;
 }
+
 .container p {
     font-weight: normal;
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
     font-size: 14px;
-    text-align: center;
-    position: relative;
     top:50%;
-    color:white;
+    left:50%;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
