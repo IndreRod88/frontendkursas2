@@ -1,0 +1,48 @@
+html {
+    position:center;
+}
+.circle_red {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    background-color: red;
+    opacity: 0.8;
+    position: relative;
+    top:40px;
+    left:100px;
+    vertical-align: middle;
+}
+.circle_green{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    background-color: green;
+    opacity: 0.8;
+    position: relative;
+    top:10px;
+    left:60px;
+}
+.circle_blue{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    background-color: blue;
+    opacity: 0.8;
+    position: relative;
+    top:-100px;
+    left:140px;
+}
+.block {
+    position: absolute;
+    background-color: #dddddd;
+    display:block;
+    width: 300px;
+    height: 300px;
+}
+.border {
+    border: 5px solid;
+    opacity: 1;
+}
