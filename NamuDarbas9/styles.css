@@ -1,7 +1,10 @@
-html, body {
-    text-align:center;
-
-
+html {
+    text-align:left;
+}
+block {
+    height: 100%;
+    width: 980px;
+    position:fixed;
 }
 * {
     box-sizing: border-box;

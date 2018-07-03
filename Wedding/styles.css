@@ -1,0 +1,6 @@
+.body {
+    width: 980px;
+    height:100%;
+}
+body,h1,h2{font-family: "Raleway", sans-serif}
+.bgimg {background-image: url("img/wedding_couple.jpg")}
