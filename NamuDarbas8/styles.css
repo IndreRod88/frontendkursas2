@@ -43,8 +43,11 @@
     height: 50vw;
     position: relative;
 }
-.text {
+.rgb {
     font-size: 40px;
     color: white;
+    top:50%;
+    left:50%;
     position: absolute;
+    transform: translate(-50%, -50%);
 }
