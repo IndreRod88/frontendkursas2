@@ -4,21 +4,23 @@ html, body {
 * {
     box-sizing: border-box;
 }
-.header {
+.header-a {
     background-color: green;
     height:10em;
     width:70%;
     display: inline-block;
     margin: 2px;
+    float: left;
 }
-.aside {
+.header-b {
     background-color:green;
     height:10em;
     width:29%;
     display: inline-block;
     margin: 2px;
+    float: left;
 }
-.aside-left {
+.aside-c {
     background-color:yellow;
     width:20%;
     float: left;
