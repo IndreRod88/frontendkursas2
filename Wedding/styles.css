@@ -1,26 +1,65 @@
+body, html {
+    height: 100%;
+}
 html {
-    background: url(img/wedding_couple.jpg) no-repeat center center fixed;         /* padaryti su pilku atspalviu fona
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+p {
+    line-height: 2;
+}
+.usimg {
+    background-image: url(img/wedding_couple2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: ;
+    margin: 32px 0;
+    height: 328.333px;
+}
+.bgimg {
+    background-image: url(img/wedding_couple.jpg);
+    min-height: 100%;
+    background-position: center;
     background-size: cover;
-    font-family: Verdana,sans-serif;                          /* !!!  fonta pakeisti, tarpus tarp eiluciu sutvarkyti */
+}
+html, body {
+    font-family: Verdana,sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
-.h1{
-  font-size:64px;
-    color: white;
+.w-pav {
+    font-size: 64px;
     top:50%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
-}
-.h2{
-    font-size:30px;
     color: white;
-    top:60%;
+    font-family:"Raleway", sans-serif;
+}
+.w-pav-2 {
+    font-size: 30px;
+    top:50%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
+    color: white;
+    font-family:"Raleway", sans-serif;
 }
+.w-pav-3 {
+    font-size: 36px;
+    text-align: center;
+    font-family:"Raleway", sans-serif;
+    color: #757575!important;
+}
+.w-us-text {
+    font-size: 15px;
+    text-align: left;
+    color: #000!important;
+    font-family:"Raleway", sans-serif;
+    font-style: italic;
+}
+.block-us {
+    background-color:  #ffdddd!important;
+}
+
+
