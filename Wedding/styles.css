@@ -1,13 +1,25 @@
-.body {
-    width: 1080px;
-    height:100%;
+html {
+    background: url(img/wedding_couple.jpg) no-repeat center center fixed;         /* padaryti su pilku atspalviu fona
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Verdana,sans-serif;                          /* !!!  fonta pakeisti, tarpus tarp eiluciu sutvarkyti */
+    font-size: 15px;
+    line-height: 1.5;
 }
-.blokas {
-    background-image: url("img/wedding_couple.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 700px;
+.h1{
+  font-size:64px;
+    color: white;
     top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.h2{
+    font-size:30px;
+    color: white;
+    top:60%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
