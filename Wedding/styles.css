@@ -12,9 +12,9 @@ p {
     background-image: url(img/wedding_couple2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    position: ;
+    height: 506px;
+    display: block;
     margin: 32px 0;
-    height: 328.333px;
 }
 .bgimg {
     background-image: url(img/wedding_couple.jpg);
@@ -38,7 +38,16 @@ html, body {
 }
 .w-pav-2 {
     font-size: 30px;
-    top:50%;
+    top:70%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family:"Raleway", sans-serif;
+}
+.w-pav-date {
+    font-size: 30px;
+    top:80%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -61,5 +70,30 @@ html, body {
 .block-us {
     background-color:  #ffdddd!important;
 }
+.weding-round {
+    border-radius: 4px;
+}
+.grey-style {
+    filter: grayscale(50%);
+}
+.w-center {
+    text-align: center!important;
+}
+.weding-button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px!important;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.wedding-button-text {
+    font-size: 18px;
+    font-family:"Raleway", sans-serif;
 
-
+}
