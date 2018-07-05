@@ -1,0 +1,42 @@
+body,h1,h2{
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+body, html {
+    height: 100%
+}
+p {
+    line-height:2;
+}
+.img-couple, .img-flowers {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.img-couple{
+    background-image: url("img/wedding_couple.jpg");
+}
+.img-flowers {
+    background-image: url("img/flowers.jpg");
+}
+.header-block {
+    position: relative;
+}
+.letters-spicing {
+    letter-spacing: 4px;
+}
+.grey-style {
+    filter: grayscale(50%);
+}
+.display-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.h1-text {
+    font-size: 64px;
+}
+.text-center {
+    text-align: center!important;
+}
