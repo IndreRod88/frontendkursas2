@@ -4,6 +4,7 @@ body,h1,h2{
 body, html {
     height: 100%;
     font-size: 15px;
+    margin: 0;
 }
 p {
     line-height:2;
@@ -125,7 +126,60 @@ h2 {
     padding-bottom: 16px;
 }
 .rsv-button {
-    color: #f44336;
-    background-color: black;
-    font-size: 18px;
+    color: white;
+    background-color: #f44336;
+    font-size: 24px;
+    padding: 14px 60px;
+    opacity: 0.60;
+}
+.margin-kind  {
+    padding: 16px 18px;
+}
+.menu-style {
+    bottom: 0;
+}
+.padding-8-16 {
+    padding: 8px 16px ;
+}
+.opacity {
+    opacity: 0.75;
+}
+.menu-bar-item {
+    float: left;
+    width: auto;
+    display: block;
+    padding: 8px 16px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: 0px;
+}
+.button {
+    user-select: none;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #eeeeee;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
 }
