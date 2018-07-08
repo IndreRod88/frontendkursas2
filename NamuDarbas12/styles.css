@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 980px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0px;
+}
+.top-bar {
+    background-color: #2e2e2e;
+    height: 57px;
+    position: relative;
+}
+.top-bar-menu {
+    color: #9f9f9f;
+    font-size: 12px;
+    font-family: Georgia, serif;
+    font-style: normal;
+    text-align: left;
+    padding: 4px;
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-block {
+    height: 215px;
+    background-color: white;
+    position: relative;
+}
+.top-navigation {
+    color: #2e2e2e;
+}
+

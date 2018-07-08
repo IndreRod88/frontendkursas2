@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body,h1,h2{
     font-family: "Raleway", sans-serif;
 }
@@ -136,7 +139,8 @@ h2 {
     padding: 16px 18px;
 }
 .menu-style {
-    bottom: 0;
+    bottom: 0px;
+    z-index: 999;
 }
 .padding-8-16 {
     padding: 8px 16px ;
@@ -157,10 +161,19 @@ h2 {
 }
 .button {
     user-select: none;
+    float: left;
+    width: auto;
+    display: block;
+    padding: 8px 16px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: 0px;
 }
 .navbar {
     overflow: hidden;
-    background-color: #eeeeee;
+    background-color: dimgrey;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -168,18 +181,18 @@ h2 {
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 .navbar a:hover {
-    background: #ddd;
+    background: lightgray;
     color: black;
 }
 .main {
     padding: 16px;
     margin-top: 30px;
-    height: 1500px; /* Used in this example to enable scrolling */
+    height: 1500px;
 }
