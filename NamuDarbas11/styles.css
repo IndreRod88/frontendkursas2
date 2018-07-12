@@ -522,3 +522,24 @@ li {
 .row-bottom {
     height: 54px;
 }
+.topnav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.blue-line {
+    border-bottom: #0099ff;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+.menu-nav:hover {
+    border-bottom: #0099ff;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+.menu-nav:link {
+    color: #f44336;
+    border-bottom: red;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
