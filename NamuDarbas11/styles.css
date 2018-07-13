@@ -433,7 +433,7 @@ ul{
     font-size: 12px;
     text-align: right;
 }
-li {
+li.footer-container {
     border-bottom-color: #232323;
     border-bottom-style: solid;
     border-bottom-width:2px;
@@ -531,15 +531,4 @@ li {
     border-bottom: #0099ff;
     border-bottom-width: 3px;
     border-bottom-style: solid;
-}
-.menu-nav:hover {
-    border-bottom: #0099ff;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-}
-.menu-nav:link {
-    color: #f44336;
-    border-bottom: red;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
 }
