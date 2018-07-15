@@ -4,9 +4,13 @@
 body {
     font-family: 'Amatic SC', cursive;
     margin: 0;
+    line-height: 1.5;
 }
 .greyscale {
     filter: grayscale(50%);
+}
+hr {
+    width: 100%;
 }
 /*HEADER*/
 
@@ -130,10 +134,10 @@ background-color: lightgray;
     position: relative;
 }
 
-.clearfix::after {
+.row::after {
     content: "";
-    clear: both;
     display: table;
+    clear: both;
 }
 
 .menu-3-boxes {
@@ -150,4 +154,32 @@ background-color: lightgray;
 .active, .menu-3-boxes:hover {
     background-color: #f44336;
 }
-
+.column-left {
+    width: 70%;
+    float: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.column-right {
+    width: 30;
+    float: right;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.menu-black-text {
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+}
+.menu-grey-text {
+     font-size: 36px;
+     color: #757575;
+ }
+.menu-grey-text-top {
+    font-size: 36px;
+    color: #757575;
+}
