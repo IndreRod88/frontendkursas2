@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Pizza</title>
@@ -27,7 +27,7 @@
     <div class="title-name">THE MENU</div>
     <div class="menu-table">
         <a href="#">
-            <div  class="menu-3-boxes active">PIZZA</div>
+            <div class="menu-3-boxes active">PIZZA</div>
         </a>
         <a href="#">
             <div class="menu-3-boxes">SALADS</div>
@@ -35,18 +35,115 @@
         <a href="#">
             <div class="menu-3-boxes">STARTER</div>
         </a>
-        <div class="row">
-            <div  class="column-left menu-black-text">Margherita</div>
-            <div class="column-left menu-grey-text">Fresh tomatoes, fresh mozzarella, fresh basil</div>
-            <div class="column-right menu-grey-text-top">$12.50</div>
-        </div>
-        <hr>
-        <div class="row">
-            <div  class="column-left menu-black-text">Formaggio</div>
-            <div class="column-left menu-grey-text">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</div>
-            <div class="column-right menu-grey-text-top">$15.50</div>
+        <div class="menu-container-inner">
+            <div class="row">
+                <div class="column-left menu-black-text">Margherita</div>
+                <div class="column-left menu-grey-text">Fresh tomatoes, fresh mozzarella, fresh basil</div>
+                <div class="column-right menu-grey-text-top">
+                    <mark>$12.50</mark>
+                </div>
+            </div>
             <hr>
+            <div class="row">
+                <div class="column-left menu-black-text">Formaggio</div>
+                <div class="column-left menu-grey-text">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</div>
+                <div class="column-right menu-grey-text-top">
+                    <mark>$15.50</mark>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="column-left menu-black-text">Chicken</div>
+                <div class="column-left menu-grey-text">Fresh tomatoes, mozzarella, chicken, onions</div>
+                <div class="column-right menu-grey-text-top">
+                    <mark>$7.00</mark>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="column-left menu-black-text">Pineapple'o'clock</div>
+                <div class="column-left menu-grey-text">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil
+                </div>
+                <div class="column-right menu-grey-text-top">
+                    <mark>$16.50</mark>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="column-left menu-black-text">Meat Town</div>
+                <div class="column-left menu-grey-text">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef,
+                    chicken
+                </div>
+                <div class="column-right menu-grey-text-top">
+                    <mark>$20.00</mark>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="column-left menu-black-text">Parma New</div>
+                <div class="column-left menu-grey-text">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</div>
+                <div class="column-right menu-grey-text-top">
+                    <mark>$21.50</mark>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+<!--About -->
+<div class="about-container">
+    <div class="title-name">ABOUT</div>
+    <div class="about-table">
+        <h2>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p><img src="chef.jpg" style="width:150px" class="chef-img" alt="Chef"></p>
+            <p><b>The Chef?</b> Mr. Italiano himself</p>
+            <p>We are proud of our interiors.</p>
+        </h2>
+        <img src="onepage_restaurant.jpg" class="restaurant-image">
+        <div id="opening-hours"><b>OPENING HOURS</b></div>
+        <div class="row">
+            <div class="opening-hours-left"><h2>Mon & Tue CLOSED</h2></div>
+            <p></p>
+            <div class="opening-hours-right"><h2>Friday 10:00 - 12:00</h2></div>
+            <p></p>
+            <div class="opening-hours-left"><h2>Wednesday 10.00 - 24.00</h2></div>
+            <p></p>
+            <div class="opening-hours-right"><h2>Saturday 10:00 - 23:00</h2></div>
+            <p></p>
+            <div class="opening-hours-left"><h2>Thursday 10:00 - 24:00</h2></div>
+            <p></p>
+            <div class="opening-hours-right"><h2>Sunday Closed</h2></div>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<!--CONTACT-->
+<div class="contact-container">
+    <div class="title-name" style="color: #cfcfcf">CONTACT</div>
+    <div class="contact-table">
+        <h2>Find us at some address at some place or call us at 05050515-122330</h2>
+        <p>
+        <h2><span style="background-color: black; padding-left: 8px; padding-right: 8px"> FYI!</span> We offer
+            full-service catering for any event, large or small. We understand your needs and we will
+        cater the food to satisfy the biggerst criteria of them all, both look and taste.</h2>
+        <span id="reserve-table"> <strong>Reserve</strong> a table, ask for today's special or just send us a message:</span>
+        <p></p>
+        <form action="#" target="_blank">
+            <p><input class="input-field" type="text" placeholder="Name" required="" name="Name"></p>
+            <p><input class="input-field" type="number" placeholder="How many people" required="" name="People"></p>
+            <p><input class="input-field" type="datetime-local" placeholder="Date and time" required="" name="date" value="2017-11-16T20:00"></p>
+            <p><input class="input-field" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+            <p><button id="send-button" type="submit">SEND MESSAGE</button></p>
+        </form>
+    </div>
+</div>
+
+<!--FOOTER-->
+<div class="footer-container">
+    <div id="footer-text">Powered by <a href="#">w3.css</a></div>
+</div>
 </body>
 </html>
