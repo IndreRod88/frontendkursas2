@@ -330,13 +330,13 @@ h2 {
   background-color: black;
 }
 
-#footer-text {
+.footer-text {
   margin-top: 36px;
   margin-bottom: 36px;
   font-size: 36px;
   color: white;
   text-align: center;
 }
-#footer-text:active {
+.footer-text a:hover{
  color: green;
 }
