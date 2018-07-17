@@ -5,7 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<div id="test"></div>
-<script src="staciakampis.js"></script>
+<div id="ats"></div>
+<script>
+    var gim_metai=1988;
+    var dabar_m=1988;
+    var elm = document.getElementById('ats');
+    if (dabar_m > gim_metai) {
+        elm.innerText = dabar_m + ' daugiau uz ' +gim_metai;
+    }
+    else if (gim_metai==dabar_m) {
+        elm.innerText = dabar_m + ' lygus ' + gim_metai;
+    }
+    else {
+        elm.innerText = dabar_m + ' maziau uz ' +gim_metai;
+    }
+</script>
 </body>
 </html>
