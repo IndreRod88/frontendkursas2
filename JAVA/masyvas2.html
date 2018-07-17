@@ -5,22 +5,50 @@
     <title>Title</title>
 </head>
 <body>
-<div id="ats"></div>
+<div id="vid"></div>
+<div id="nuoskaitu"></div>
+<div id="dvidid"></div>
+<div id="dvimaz"></div>
+
 <script>
     var masyvas2 = [18, 16, 20, 21, 20, 18, 20, 24, 25, 21];
 
     var result=0;
     var max = 0;
+
     masyvas2.forEach(function (temp) {
-        console.log();
         result += temp;
     })
     vidtemp = result/masyvas2.length;
     nuoskaitu = masyvas2.length;
 
-    var elm = document.getElementById('ats');
+    didz1 = Math.max.apply(null, masyvas2);
+    maz1 = Math.min.apply(null, masyvas2);
+
+    // var secondMax = function (max2) {
+    //     var didz1 = Math.max.apply(null, masyvas2); // get the max of the array
+    //     masyvas2.splice(masyvas2.indexOf(max), 1); // remove max from the array
+    //     return Math.max.apply(null, masyvas2); // get the 2nd max
+    // };
+    // var didz2 = secondMax(masyvas2);
+    //
+    //
+    // Isvedimas
+    var elm = document.getElementById('vid');
     elm.innerText = "Vidutine temp: " + vidtemp + " temp";
+
+    var elm = document.getElementById('nuoskaitu');
     elm.innerText += "Viso nuoskaitu: " + nuoskaitu;
+
+    var elm = document.getElementById('dvidid');
+    elm.innerText = "Didziausia temp: " + didz1 + " temp";
+
+    var elm = document.getElementById('dvimaz');
+    elm.innerText = "Maziausia temp: " + maz1  + "temp";
+
+
+
+
 </script>
 </body>
 </html>
