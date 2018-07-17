@@ -10,28 +10,7 @@ body {
 .greyscale {
   filter: grayscale(50%); }
 
-hr {
-  width: 97%;
-  opacity: 0.2; }
-
-/*HEADER*/
-.pizza_img {
-  background-image: url("../pizza.jpg");
-  background-repeat: no-repeat;
-  min-height: 90vh;
-  display: block;
-  background-size: cover;
-  position: relative; }
-
-.header-title {
-  font-size: 100px;
-  color: white;
-  text-align: center;
-  padding-top: 100px;
-  line-height: 150px;
-  height: auto;
-  width: auto; }
-
+/*TOP NAVIGATION*/
 .topnav {
   overflow: hidden;
   background-color: #000;
@@ -62,7 +41,26 @@ hr {
   background-color: #4CAF50;
   color: white; }
 
-/*menu styles*/
+
+/*HEADER*/
+.pizza_img {
+  background-image: url("../pizza.jpg");
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  display: block;
+  background-size: cover;
+  position: relative; }
+
+.header-title {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 150px;
+  height: auto;
+  width: auto; }
+
+/*MENU STYLES*/
 .menu-container {
   background-color: black;
   width: 100%;
@@ -110,9 +108,8 @@ hr {
   font-size: 64px;
   color: white;
   text-align: center;
-  padding-bottom: 64px;
-  padding-top: 64px;
-  overflow: hidden; }
+  margin: 10px 0px 64px 0px;
+}
 
 .menu-table {
   width: 80%;
@@ -142,6 +139,10 @@ hr {
 
 .active, .menu-3-boxes:hover {
   background-color: #f44336; }
+
+hr {
+  width: 97%;
+  opacity: 0.2; }
 
 .column-left {
   width: 75%;
@@ -201,6 +202,9 @@ mark {
   background-color: red;
   color: white; }
 
+
+/*ABOUT CONTAINER*/
+
 .about-container {
   background-color: #8b5f5b;
   width: 100%;
@@ -241,6 +245,9 @@ h2 {
 .opening-hours-right {
   width: 50%;
   float: left; }
+
+
+/*CONTACT CONTAINER*/
 
 .contact-container {
   background-color: #6c7a81;
@@ -289,6 +296,9 @@ h2 {
 .contact-table .send-button:hover {
   background-color: lightgrey; }
 
+
+/*FOOTER*/
+
 .footer-container {
   width: 100%;
   background-color: black;
@@ -309,6 +319,8 @@ h2 {
 .footer-text a, .footer-text a:visited {
   color: white; }
 
+
+/*MAP*/
 #map {
   filter: grayscale(100%);
 }
