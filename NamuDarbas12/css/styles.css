@@ -12,7 +12,8 @@ body {
   filter: grayscale(50%); }
 
 hr {
-  width: 100%; }
+  width: 97%;
+  opacity: 0.2; }
 
 /*HEADER*/
 .pizza_img {
@@ -28,7 +29,10 @@ hr {
   color: white;
   text-align: center;
   padding-top: 100px;
-  line-height: 1.5; }
+  line-height: 150px;
+  text-size-adjust: 100%;
+  height: auto;
+  width: auto; }
 
 .topnav {
   overflow: hidden;
@@ -60,6 +64,13 @@ hr {
   color: white; }
 
 /*menu styles*/
+.menu-container {
+  background-color: black;
+  width: 100%; }
+
+.menu-container-inner {
+  background-color: white; }
+
 .menu-button {
   background-color: black; }
 
@@ -72,7 +83,7 @@ hr {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  padding: 16px 16px;
+  padding: 8px 16px;
   margin-top: 20px;
   overflow: hidden;
   background-color: black; }
@@ -102,12 +113,6 @@ hr {
   padding-top: 64px;
   overflow: hidden; }
 
-.menu-container {
-  background-color: black;
-  width: 100%;
-  padding-bottom: 64px;
-  overflow: hidden; }
-
 .menu-table {
   width: 80%;
   background-color: white;
@@ -119,7 +124,7 @@ hr {
   overflow: hidden;
   margin-bottom: 64px; }
 
-.row::after {
+.row:after {
   content: "";
   display: table;
   clear: both; }
@@ -149,10 +154,27 @@ hr {
 .column-right {
   width: 25%;
   float: right;
+  color: white;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px; }
+
+#hot {
+  color: white;
+  background-color: #f44336;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-weight: normal; }
+
+#new {
+  color: black;
+  background-color: #9e9e9e;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-weight: normal; }
 
 .menu-black-text {
   font-size: 36px;
@@ -184,16 +206,8 @@ mark {
   width: 100%;
   overflow: hidden; }
 
-.menu-container-inner {
-  background-color: white; }
-
 h2 {
   color: white;
-  font-size: 24px;
-  font-weight: normal; }
-
-.contact-table h2 {
-  color: #cfcfcf;
   font-size: 24px;
   font-weight: normal; }
 
@@ -237,32 +251,30 @@ h2 {
   width: 80%;
   border: none;
   text-align: left;
-  margin: 0 auto;
-  margin-bottom: 64px; }
+  margin: 0 auto; }
 
 #reserve-table {
   font-size: 36px;
-  color: #cfcfcf;
   margin-top: 36px;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  color: white; }
 
 .contact-table .input-field {
   width: 100%;
   padding: 16px 8px;
-  border: 1px;
+  border-width: 1px;
   border-style: solid;
-  border: #ccc;
+  border-color: #ccc;
   text-transform: uppercase;
   font-size: 24px;
   font-family: 'Amatic SC', cursive;
   display: block;
-  margin-bottom: 30px;
-  height: 70px;
-  overflow: visible; }
+  margin-bottom: 25px;
+  height: 70px; }
 
-.contact-table #send-button {
+.contact-table .send-button {
   width: 100%;
-  padding: 16px 8px;
+  padding: 8px 16px;
   border: 1px;
   border-style: solid;
   border: #ccc;
@@ -270,12 +282,19 @@ h2 {
   font-size: 24px;
   font-family: 'Amatic SC', cursive;
   display: block;
-  margin: 0; }
+  margin: 0;
+  cursor: pointer;
+  background-color: white; }
+
+.contact-table .send-button:hover {
+  background-color: lightgrey; }
 
 .footer-container {
   width: 100%;
-  padding: 64px 16px;
-  background-color: black; }
+  background-color: black;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  box-sizing: border-box; }
 
 .footer-text {
   margin-top: 36px;
@@ -286,3 +305,9 @@ h2 {
 
 .footer-text a:hover {
   color: green; }
+
+.footer-text a, .footer-text a:visited {
+  color: white; }
+
+#googleMap {
+  filter: grayscale(100%); }
