@@ -10,14 +10,17 @@
     var masyvas2 = [18, 16, 20, 21, 20, 18, 20, 24, 25, 21];
 
     var result=0;
+    var max = 0;
     masyvas2.forEach(function (temp) {
         console.log();
         result += temp;
     })
     vidtemp = result/masyvas2.length;
+    nuoskaitu = masyvas2.length;
 
     var elm = document.getElementById('ats');
     elm.innerText = "Vidutine temp: " + vidtemp + " temp";
+    elm.innerText += "Viso nuoskaitu: " + nuoskaitu;
 </script>
 </body>
 </html>

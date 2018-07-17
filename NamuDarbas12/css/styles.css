@@ -1,5 +1,4 @@
 * {
-  box-sizing: inherit;
   box-sizing: border-box; }
 
 body {
@@ -30,7 +29,6 @@ hr {
   text-align: center;
   padding-top: 100px;
   line-height: 150px;
-  text-size-adjust: 100%;
   height: auto;
   width: auto; }
 
@@ -39,7 +37,8 @@ hr {
   background-color: #000;
   opacity: 0.6;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+}
 
 .topnav a {
   float: left;
@@ -66,7 +65,9 @@ hr {
 /*menu styles*/
 .menu-container {
   background-color: black;
-  width: 100%; }
+  width: 100%;
+  padding: 64px 16px;
+}
 
 .menu-container-inner {
   background-color: white; }
@@ -135,7 +136,6 @@ hr {
   background-color: #000000;
   font-size: 36px;
   text-align: center;
-  position: relative;
   color: white;
   overflow: hidden;
   padding: 12px 24px; }
@@ -309,5 +309,13 @@ h2 {
 .footer-text a, .footer-text a:visited {
   color: white; }
 
-#googleMap {
-  filter: grayscale(100%); }
+#map {
+  filter: grayscale(100%);
+}
+
+/*//MEDIA*/
+@media only screen and (max-width: 600px) {
+  .topnav {
+    overflow: hidden;
+    display: none;
+  }

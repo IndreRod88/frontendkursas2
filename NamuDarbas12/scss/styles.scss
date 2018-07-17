@@ -1,6 +1,5 @@
 * {
-  box-sizing: inherit;
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
@@ -316,7 +315,6 @@ h2 {
     margin-bottom: 25px;
     height: 70px;
   }
-
   .send-button {
        width: 100%;
        padding: 8px 16px;
@@ -368,9 +366,8 @@ h2 {
 }
 
 //MEDIA
-  @media only screen and (max-width: 600px) {
-    .topnav {
-      overflow: hidden;
-      display: none;
-    }
-  }
+    @media only screen and (max-width: 600px) {
+      .topnav {
+        overflow: hidden;
+        display: none;
+      }
