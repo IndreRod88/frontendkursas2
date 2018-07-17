@@ -36,7 +36,6 @@ hr {
   text-align: center;
   padding-top: 100px;
   line-height: 150px;
-  text-size-adjust:100%;
   height: auto;
   width: auto;
 }
@@ -142,6 +141,7 @@ hr {
   text-align: left;
   margin: 0 auto;
   overflow: hidden;
+  z-index: 0;
 }
 
 .row:after {
@@ -156,10 +156,10 @@ hr {
   background-color: #000000;
   font-size: 36px;
   text-align: center;
-  position: relative;
   color: white;
   overflow: hidden;
   padding: 12px 24px;
+  z-index: 0;
 }
 
 .active, .menu-3-boxes:hover {
@@ -364,6 +364,7 @@ h2 {
 //GOOGLE MAP
 #googleMap {
   filter: grayscale(100%);
+  z-index: 0;
 }
 
 //MEDIA
