@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="valanda"></div>
+<div id="normalitemp"></div>
+<div id="puselaip"></div>
+<script>
+    var temperaturos = [36.7,41.2,36.6,35,38.8,39.1,39.2,40.7];
+    var laikas = [12,13,14,15,16,17,18,19];
+    var closest=[];
+    var normal = [];
+    var maxTemp = 0;
+    var maxIndex = 0;
+
+    temperaturos.forEach( function (temp, index) {
+        if (maxTemp < temp) {
+            maxTemp = temp;
+            maxIndex = index;
+        }
+        if (temp >= 36.40 && temp <= 37.00) {
+            normal.push(laikas[index] + 'val.' + temp);
+        }
+        if ( temp < maxTemp && temp >= maxTemp - 0.5 ||  temp > maxTemp && temp <= maxTemp + 0.5 ) {
+            closest.push(laikas[index] + ' val. ' + temp + ' C');
+        }
+    });
+
+document.getElementById("valanda").innerText = "Auksciausia temperatura: " + " " + maxTemp + " C buvo " + laikas[maxIndex] +"h";
+document.getElementById("normalitemp").innerText = "Normali temperatura: " + normal.join("");
+document.getElementById("puselaip").innerText = "Mazesne 0.5 laipsnio uz didziausia : " + closest.join("");
+
+</script>
+</body>
+</html>

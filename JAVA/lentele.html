@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .table-styles {
+        background-color: white;
+        font-size: 14px;
+        font-family: Arial;
+        color: gray();
+    }
+
+    th {
+        background-color: #e0e0e0;
+    }
+
+    th, td {
+        border: 1px solid darkgrey;
+        padding: 10px;
+    }
+    .form {
+        margin-bottom: 10px;
+    }
+    input {
+        margin-bottom:  10px;
+        padding: 5px;
+    }
+</style>
+<form action="" method="POST">
+    <input id="data1" type="datetime-local" placeholder="Laikas ir data" name="fname"><br>
+    <input id="data2" type="text" placeholder="Auto numeris" name="lname"><br>
+    <input id="data3" type="text" placeholder="Greitis" name="lname"><br>
+    <input id="data4" type="text"  placeholder="Nuvaziuotas atstumas km" name="lname"><br>
+    <input type ="button" onclick="addTo()" value="Add" />
+</form>
+<table id="myTable">
+    <thead>
+    <tr>
+        <td>Laikas/Data</td>
+        <td>Numeris</td>
+        <td>Greitis</td>
+        <td>Nuv. atstumas km</td>
+        <td>Laikas kiek vaziavo auto h</td>
+    </tr>
+    </thead>
+    <thead>
+    <tbody id="duomenys">
+    </tbody>
+    </thead>
+</table>
+<script src="masinos.js"></script>
+</body>
+</html>
+
+

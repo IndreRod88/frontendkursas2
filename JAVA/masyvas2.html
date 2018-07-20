@@ -9,30 +9,32 @@
 <div id="nuoskaitu"></div>
 <div id="dvidid"></div>
 <div id="dvimaz"></div>
+<div id="test"></div>
 
 <script>
     var masyvas2 = [18, 16, 20, 21, 20, 18, 20, 24, 25, 21];
 
     var result=0;
-    var max = 0;
+    var max2=masyvas2 [0];
+
 
     masyvas2.forEach(function (temp) {
         result += temp;
     })
+
     vidtemp = result/masyvas2.length;
     nuoskaitu = masyvas2.length;
 
     didz1 = Math.max.apply(null, masyvas2);
     maz1 = Math.min.apply(null, masyvas2);
 
-    // var secondMax = function (max2) {
-    //     var didz1 = Math.max.apply(null, masyvas2); // get the max of the array
-    //     masyvas2.splice(masyvas2.indexOf(max), 1); // remove max from the array
-    //     return Math.max.apply(null, masyvas2); // get the 2nd max
-    // };
-    // var didz2 = secondMax(masyvas2);
-    //
-    //
+    masyvas2.forEach(function (max2) {
+       var kintamasis=max2;
+
+
+    })
+
+
     // Isvedimas
     var elm = document.getElementById('vid');
     elm.innerText = "Vidutine temp: " + vidtemp + " temp";
@@ -41,7 +43,7 @@
     elm.innerText += "Viso nuoskaitu: " + nuoskaitu;
 
     var elm = document.getElementById('dvidid');
-    elm.innerText = "Didziausia temp: " + didz1 + " temp";
+    elm.innerText = "Didziausios temp: " + didz1 + ", " + didz2 + " temp";
 
     var elm = document.getElementById('dvimaz');
     elm.innerText = "Maziausia temp: " + maz1  + "temp";

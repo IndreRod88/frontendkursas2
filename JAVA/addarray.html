@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+New array element:<br>
+<input id="age" type="text" name="firstname" value="">
+<input id="age2" type="text" name="firstname2" value="">
+<br>
+<br>
+<input type="button" value="Submit" onclick="myFunction()">
+
+
+<p id="demo"></p>
+
+<script>
+    var fruits = [];
+    function myFunction(){
+        let newArray = document.getElementById("age").value;
+        let newArray = document.getElementById("age2").value;
+        fruits.push(newArray);
+        document.getElementById("demo").innerHTML = fruits;
+    }
+</script>
+
+</body>
+</html>
