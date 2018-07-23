@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Dejavu';
+    src: url('https://www.fontsquirrel.com/fonts/dejavu-sans');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 350px;
+    background-color: #f1f1f1;
+}
+
+.elegant-text {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    color: #aaaaaa;
+}
+
+.input-field {
+    font-size: 18px;
+    font-family: Dejavu;
+    text-align: left;
+    color: #aaaaaa;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 58px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e2e2e2;
+    line-height: 38px;
+    border-top: none;
+    width: 43%;
+    float: left;
+}
+
+.textarea {
+    width: 41%;
+    float: right;
+    margin-right: 40px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e2e2e2;
+    border-top: none;
+    height: 142px;
+    font-family: Dejavu;
+    font-size: 18px;
+    color: #aaaaaa;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.row-form {
+    height: 250px;
+    width: 100%;
+}
+
+.row-form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.submit-button {
+    width: 702px;
+    margin-top: 10px;
+    background-color: #e44d3c;
+    height: 35px;
+    text-align: center;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    overflow: hidden;
+    margin-left: 58px;
+    font-family: Dejavu;
+    margin-right: 40px;
+    line-height: 32px;
+}
