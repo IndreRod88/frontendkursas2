@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/java.js"></script>
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    th, td {
+        border: 1px solid darkgrey;
+        padding: 10px;
+        margin: 10px;
+    }
+    .margin_5 {
+        margin-right:6px;
+    }
+    .margin_10 {
+        margin: 10px;
+    }
+</style>
+<body>
+<table id="myTable">
+    <thead>
+    <tr>
+        <td>Laikas/Data</td>
+        <td>Numeris</td>
+        <td>Greitis</td>
+        <td>Nuv. atstumas km</td>
+        <td>Laikas kiek vaziavo auto h</td>
+    </tr>
+    </thead>
+<input id="press" class="btn btn-primary margin_10" data-toggle="modal" data-target="#myModal" type="button" value="Naujas"/>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Įvedimo forma</h4>
+                </div>
+                <div class="modal-body">
+                    <p><input id="auto" type="text" class="form-control" placeholder="Auto numeris" /></p>
+                    <p><input id="greitis" type="text" class="form-control" placeholder="Greitis"/></p>
+                    <p><input id="laikas" type="text" class="form-control" placeholder="Laikas"/></p>
+                </div>
+                <div class="modal-footer">
+                    <input id="confirm-button" type="button" onclick="confirm()" data-dismiss="modal" class="btn btn-success margin_5" value="Saugoti" />
+                    <input id="cancel-button" type="button" onclick="cancel()" data-dismiss="modal" class="btn btn-danger padding_5" value="Atšaukti"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/java.js"></script>
+</body>
+</html>

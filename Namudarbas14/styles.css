@@ -1,4 +1,31 @@
+body {
+    font-family: Dejavu;
+}
 .container {
     width: 700px;
     height: 400px;
+    background-color: white;
+}
+.left-side {
+    width: 30%;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+}
+.right-side {
+    width: 60%;
+    float: left;
+}
+.row-form {
+    height: 360px;
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e4e4;
+}
+.input-style {
+    width: 200px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    overflow: hidden;
 }

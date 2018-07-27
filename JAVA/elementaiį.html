@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="tevas">labas</div>
+<style>
+
+#elementas-1 {
+    background-color: #0c5460;
+}
+#elementas-2 {
+    background-color: #005cbf;
+}
+#elementas-3 {
+    background-color: #117a8b;
+}
+#elementas-4 {
+    background-color: #b21f2d;
+}
+#elementas-5 {
+    background-color: #e83e8c;
+}
+
+</style>
+<script>
+    for (let i=1; i<=5; i++) {
+        let div1 = document.createElement('div');
+        div1.id = 'elementas-' +i;
+        div1.className = 'klase';
+       document.getElementById('tevas').appendChild(div1);
+       let elm=document.getElementById('tevas').style;
+        elm.color = 'green';
+       elm.fontSize = '100px';
+
+    }
+</script>
+</body>
+</html>
+
+<!--document.querySelector('.klase');-->

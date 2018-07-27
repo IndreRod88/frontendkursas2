@@ -8,9 +8,9 @@ let autos = [
     ['2017-07-06 19:59:45', 'ABC258', 7894, 130],
     ['2017-07-06 19:59:45', 'ABC369', 3578, 140],
     ['2017-07-06 19:59:46', 'ABC854', 1598, 150],
-    null, undefined,
 ];
 
+var masyvas = [];
 let new_autos;
 let a;
 let b;
@@ -34,8 +34,16 @@ autos.forEach(function (auto) {
     }
 });
 
+
 function addTo() {
-    let data_laikas = document.getElementById("data1").value;
+    let data_laikas = new Date(document.getElementById("data1").value);
+    let year = data_laikas.getFullYear();
+    let month = data_laikas.getMonth();
+    let day = data_laikas.getDate();
+    let hours = data_laikas.getHours();
+    let minutes = data_laikas.getMinutes();
+    let sekundes = data_laikas.getSeconds();
+    let data_laikas_full = year + '-' + month + '-' + day + " " + hours + ":" +minutes + ":" +sekundes;
     let numeris = document.getElementById("data2").value;
     let greitis = document.getElementById("data3").value;
     let atstumas = document.getElementById("data4").value;
@@ -43,8 +51,9 @@ function addTo() {
 
     if ((data_laikas !== "") && (numeris !== "") && (greitis !== "") && (atstumas !== "")) {
 
-        autos.push(data_laikas);
         let row = table.insertRow(-1);
+
+        autos.push(data_laikas_full);
         let cell1 = row.insertCell(0);
         let data_laikas_last = autos.length - 1;
         cell1.innerHTML = autos[data_laikas_last];
@@ -59,13 +68,18 @@ function addTo() {
         let greitis_last = autos.length - 1;
         cell3.innerHTML = autos[greitis_last];
 
+        autos.push(atstumas);
         let cell4 = row.insertCell(3);
-        cell4.innerHTML = atstumas;
+        let atstumas_last = autos.length - 1;
+        cell4.innerHTML = autos[atstumas_last];
+
         let cell5 = row.insertCell(4);
         let kmh = (greitis / 1000) / (atstumas / 3600);
         cell5.innerHTML = Math.round(kmh);
     }
 }
 
-
+function reset() {
+    document.getElementById("myform").reset();
+}
 

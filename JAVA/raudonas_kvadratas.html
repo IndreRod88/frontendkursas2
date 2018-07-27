@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raudonas kvadratas</title>
+</head>
+<body>
+<style>
+    #square {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+
+    .cycle {
+        width: 10vw;
+        height: 10vw;
+        -moz-border-radius: 10vw;
+        -webkit-border-radius: 10vw;
+    }
+    .square-red {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<script>
+
+    function myFunction() {
+        let elm = document.getElementById("square");
+        elm.style.backgroundColor = "green";
+        setTimeout(cycleFunction, 500);
+    }
+
+    function myFunction2() {
+        let elm = document.getElementById("square");
+        elm.style.backgroundColor = "red";
+        elm.onclick = function () {
+            elm.className = "square-red";
+            myFunction();
+        }
+    }
+    function cycleFunction() {
+        let elm = document.getElementById("square");
+        elm.className = "cycle";
+        elm.onclick = function () {
+            elm.className = "square-red";
+            myFunction2();
+        }
+    }
+
+    // elm.addEventListener("click",
+    //     function() {
+    //     myFunction2();
+    //     });
+</script>
+<div id="square" onclick="setTimeout(myFunction, 500)"></div>
+</body>
+</html>

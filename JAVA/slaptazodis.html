@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slaptazodzio keitimo forma</title>
+</head>
+<body>
+<style>
+    .input-field {
+        width: 200px;
+        margin-bottom: 15px;
+        line-height: 20px;
+        padding-left: 3px;
+        border-radius: 5px;
+    }
+
+    .button-class {
+        background-color: lightgrey;
+        color: dimgrey;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #9e9e9e;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    #rez {
+        font-size: 16px;
+    }
+
+    .loader {
+        border: 5px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 5px solid #3498db;
+        width: 20px;
+        height: 20px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+<script>
+    function change_pass() {
+        let naujas_pass = document.getElementById("naujas").value;
+        let naujas_pass2 = document.getElementById("naujas2").value;
+        if (naujas_pass !== "" && naujas_pass2 !== "") {
+            if (naujas_pass === naujas_pass2) {
+                let result = "Slaptažodis keičiamas..";
+                document.getElementById('rez').innerText = result;
+                let div = document.createElement("div");
+                div.className = "loader";
+                document.getElementById("rez").appendChild(div)
+            } else {
+                let result = "Slaptažodžiai nesutampa - pakartokite dar kartą";
+                document.getElementById('rez').innerText = result;
+            }
+        } else {
+            let result = "Neįvesti slaptažodžiai !";
+            document.getElementById('rez').innerText = result;
+        }
+    }
+
+    function change_color() {
+        let elm = document.getElementById("btn");
+        elm.style.cursor = "pointer";
+        elm.style.backgroundColor = "white";
+        elm.style.fontSize = "20px";
+        elm.style.color = "red";
+    }
+
+    function change_color_back() {
+        let elm = document.getElementById("btn");
+        elm.style.cursor = "";
+        elm.style.backgroundColor = "lightgrey";
+        elm.style.fontSize = "14px";
+        elm.style.color = "dimgrey";
+    }
+</script>
+<form id="" method="post">
+    <input id="naujas" class="input-field" type="password" placeholder="Naujas slaptažodis">
+    <br>
+    <input id="naujas2" class="input-field" type="password" placeholder="Pakartotinai naujas slaptažodis">
+    <br>
+    <input id=btn class="button-class" type="button" onclick="change_pass()" onmouseover="change_color()"
+           onmouseout="change_color_back()" value="Keisti">
+    <br>
+</form>
+<p>
+<div id="rez"></div>
+</p>
+</body>
+</html>
