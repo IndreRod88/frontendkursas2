@@ -14,9 +14,11 @@
         padding: 10px;
         margin: 10px;
     }
+
     .margin_5 {
-        margin-right:6px;
+        margin-right: 6px;
     }
+
     .margin_10 {
         margin: 10px;
     }
@@ -32,7 +34,8 @@
         <td>Laikas kiek vaziavo auto h</td>
     </tr>
     </thead>
-<input id="press" class="btn btn-primary margin_10" data-toggle="modal" data-target="#myModal" type="button" value="Naujas"/>
+    <input id="press" class="btn btn-primary margin_10" data-toggle="modal" data-target="#myModal" type="button"
+           value="Naujas"/>
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -40,15 +43,63 @@
                     <h4 class="modal-title">Įvedimo forma</h4>
                 </div>
                 <div class="modal-body">
-                    <p><input id="auto" type="text" class="form-control" placeholder="Auto numeris" /></p>
+                    <p><input id="auto" type="text" class="form-control" placeholder="Auto numeris"/></p>
                     <p><input id="greitis" type="text" class="form-control" placeholder="Greitis"/></p>
                     <p><input id="laikas" type="text" class="form-control" placeholder="Laikas"/></p>
                 </div>
                 <div class="modal-footer">
-                    <input id="confirm-button" type="button" onclick="confirm()" data-dismiss="modal" class="btn btn-success margin_5" value="Saugoti" />
-                    <input id="cancel-button" type="button" onclick="cancel()" data-dismiss="modal" class="btn btn-danger padding_5" value="Atšaukti"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/java.js"></script>
+                    <input id="confirm-button" type="button" onclick="confirm()" data-dismiss="modal"
+                           class="btn btn-success margin_5" value="Saugoti"/>
+                    <input id="cancel-button" type="button" onclick="cancel()" data-dismiss="modal"
+                           class="btn btn-danger padding_5" value="Atšaukti"/>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <!--Modalinis langas naikinimo mygtukui-->
+
+                    <div class="modal fade" id="remove" role="dialog">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Ar tikrai norite ištrinti eilutę?</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <input id="yes" type="button" onclick="naikinti()" data-dismiss="modal"
+                                           class="btn btn-success margin_5" value="Taip"/>
+                                    <input id="no" type="button"  onclick="cancel()" data-dismiss="modal"
+                                           class="btn btn-danger padding_5" value="Ne"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    <!--MODALINIS TAISYTI LANGAS-->
+    <div class="modal fade" id="taisyti" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Įvedimo forma</h4>
+                </div>
+                <div class="modal-body">
+                    <p><input id="auto-r" type="text" class="form-control" placeholder="Auto numeris" /></p>
+                    <p><input id="greitis-r" type="text" class="form-control" placeholder="Greitis" /></p>
+                    <p><input id="laikas-r" type="text" class="form-control" placeholder="Laikas" /></p>
+                </div>
+                <div class="modal-footer">
+                    <input id="confirm-button" type="button" onclick="update()" data-dismiss="modal"
+                           class="btn btn-success margin_5" value="Saugoti"/>
+                    <input id="cancel-button" type="button" onclick="cancel()" data-dismiss="modal"
+                           class="btn btn-danger padding_5" value="Atšaukti"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                                    <script src="js/bootstrap.min.js"></script>
+                                    <script src="js/java.js"></script>
 </body>
 </html>

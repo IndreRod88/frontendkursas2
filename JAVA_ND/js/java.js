@@ -12,7 +12,8 @@ function dateFunction() {
 
 function confirm() {
     let list = {
-        auto: document.getElementById("auto").value, greitis: document.getElementById("greitis").value,
+        auto: document.getElementById("auto").value,
+        greitis: document.getElementById("greitis").value,
         laikas: document.getElementById("laikas").value
     };
 
@@ -41,21 +42,37 @@ function confirm() {
         let button = document.createElement("button");
         let t = document.createTextNode("Taisyti");
         button.appendChild(t);
+        button.className = "btn-primary btn-xs";
+        button.setAttribute("type", "button");
+        button.setAttribute("data-toggle", "modal");
+        button.setAttribute("data-target", "#taisyti");
+        document.getElementsByTagName('body')[0].appendChild(button);
         cell6.appendChild(button);
+        document.getElementById("auto-r").value = list.auto;
+        document.getElementById("greitis-r").value = list.greitis;
+        document.getElementById("laikas-r").value = list.laikas;
 
-        button.addEventListener ("click", function() {
-            alert("did something");
-        });
 
         let cell7 = row.insertCell(6);
         let button_remov = document.createElement("button");
         let t_remov = document.createTextNode("Naikinti");
         button_remov.appendChild(t_remov);
+        button_remov.className = "btn-danger btn-xs";
+        button_remov.setAttribute("type", "button");
+        button_remov.setAttribute("data-toggle", "modal");
+        button_remov.setAttribute("data-target", "#remove");
+        document.getElementsByTagName('body')[0].appendChild(button_remov);
         cell7.appendChild(button_remov);
+    }
+}
 
-        button_remov.addEventListener ("click", function(no) {
-            document.getSelection(row).contentEditable = true;
-        });
+function update() {
+    list.prototype;
 
+    if ((list.auto !== "") && (list.greitis !== "") && (list.laikas !== "")) {
+
+         list.auto = document.getElementById("auto-r").value;
+         list.greitis = document.getElementById("greitis-r").value;
+         list.laikas = document.getElementById("laikas-r").value;
     }
 }
