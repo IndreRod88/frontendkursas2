@@ -1,0 +1,30 @@
+.main-container {
+    background-color: white;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+row {
+    width: 960px;
+}
+h1, h6 {
+    color:#aebab6;
+}
+
+nav {
+    width: 480px;
+    background-color: red;
+}
+.right-float {
+    float: left;
+}
+
+ul {
+    float: left;
+}

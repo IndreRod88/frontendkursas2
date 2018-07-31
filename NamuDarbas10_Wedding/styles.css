@@ -1,133 +1,171 @@
 * {
     box-sizing: border-box;
 }
-body,h1,h2{
+
+body, h1, h2 {
     font-family: "Raleway", sans-serif;
 }
+
 body, html {
     height: 100%;
     font-size: 15px;
     margin: 0;
+    background-color: #f2e1e1;
 }
+
 p {
-    line-height:2;
+    line-height: 2;
 }
+
 h1, h2 {
     font-weight: 400;
+    margin: 10px 0;
 }
+
+
 .img-couple, .img-flowers {
     min-height: 100%;
     background-position: center;
     background-size: cover;
 }
-.img-couple{
+
+.img-couple {
     background-image: url("img/wedding_couple.jpg");
 }
-.img-couple2{
+
+.img-couple2 {
     background-image: url("img/wedding_couple2.jpg");
     background-repeat: no-repeat;
     vertical-align: middle;
     height: 506px;
 }
+
 .img-flowers {
     background-image: url("img/flowers.jpg");
 }
+
 .img-location {
     background-image: url("img/wedding_location.jpg");
     height: 600px;
     background-repeat: no-repeat;
 }
+
 .header-block {
     position: relative;
 }
+
 .letters-spicing {
     letter-spacing: 4px;
 }
+
 .grey-style {
     filter: grayscale(50%);
 }
+
 .display-center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 .text-center {
     text-align: center;
 }
+
 .pading-64 {
     padding-top: 64px;
     padding-bottom: 64px;
 }
+
 .color-background {
     color: #000;
     background-color: #ffdddd;
 }
+
 .content {
     max-width: 980px;
     margin: auto;
 }
+
 .white-text {
     color: white;
 }
+
 .grey-text {
     color: #757575;
 }
+
 .round {
     border-radius: 4px;
 }
+
 .wedding-button {
     color: #fff;
     background-color: black;
     font-size: 18px;
 }
-.padding-12-24{
+
+.padding-12-24 {
     padding: 12px 24px;
 }
+
 a:link {
     color: white;
 }
+
 a:visited {
     color: white;
 }
+
 a:link {
     text-decoration: none;
 }
+
 a:hover {
     color: black;
     background-color: lightgrey;
 }
+
 h1 {
-    font-size: 64px;
+    font-size: 60px;
 }
+
 h2 {
     font-size: 30px;
 }
+
 .img-margin-64 {
-      margin:64px 0;
-      width: 100%;
-}
-.img-margin-32 {
-    margin:32px 0;
+    margin: 64px 0;
     width: 100%;
 }
+
+.img-margin-32 {
+    margin: 32px 0;
+    width: 100%;
+}
+
 .column {
     float: left;
     width: 50%;
 }
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .footer-line {
     color: white;
     background-color: black;
 }
+
 .footer-padding-16 {
     padding-top: 16px;
     padding-bottom: 16px;
 }
+
 .rsv-button {
     color: white;
     background-color: #f44336;
@@ -135,18 +173,23 @@ h2 {
     padding: 14px 60px;
     opacity: 0.60;
 }
-.margin-kind  {
+
+.margin-kind {
     padding: 16px 18px;
 }
+
 .menu-style {
     bottom: 0px;
 }
+
 .padding-8-16 {
-    padding: 8px 16px ;
+    padding: 8px 16px;
 }
+
 .opacity {
     opacity: 0.75;
 }
+
 .menu-bar-item {
     float: left;
     width: auto;
@@ -158,6 +201,7 @@ h2 {
     border-image: initial;
     outline: 0px;
 }
+
 .button {
     user-select: none;
     float: left;
@@ -170,6 +214,7 @@ h2 {
     border-image: initial;
     outline: 0px;
 }
+
 .navbar {
     overflow: hidden;
     background-color: dimgrey;
@@ -178,6 +223,7 @@ h2 {
     width: 100%;
     overflow: hidden;
 }
+
 .navbar a {
     float: left;
     display: block;
@@ -187,10 +233,12 @@ h2 {
     text-decoration: none;
     font-size: 17px;
 }
+
 .navbar a:hover {
     background: lightgray;
     color: black;
 }
+
 .main {
     padding: 16px;
     margin-top: 30px;

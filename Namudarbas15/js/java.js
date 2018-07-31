@@ -9,25 +9,23 @@ function dateFunction() {
     return y + '-' + m + '-' + day + ' ' + h + ':' + min + ':' + s;
 }
 
-let array=[];
-
+let rowid = 0;
 function confirm() {
     let list = {
+        rowid: rowid++,
         auto: document.getElementById("auto").value,
         greitis: document.getElementById("greitis").value,
-        laikas: document.getElementById("laikas").value,
+        laikas: document.getElementById("laikas").value
     };
 
+    array=[];
 
     let table = document.getElementById("myTable");
     if ((list.auto !== "") && (list.greitis !== "") && (list.laikas !== "")) {
-        array.push(list);
-        console.log(array);
-
         let row = table.insertRow(-1);
 
         let cell1 = row.insertCell(0);
-        cell1.innerHTML = dateFunction();
+        cell1.innerHTML = rowid + " / " +dateFunction();
 
         let cell2 = row.insertCell(1);
         cell2.innerHTML = list.auto;
@@ -48,18 +46,24 @@ function confirm() {
 
         let t = document.createTextNode("Taisyti");
         button.appendChild(t);
-
         button.className = "btn-primary btn-xs";
+
+
         button.setAttribute("type", "button");
         cell6.appendChild(button);
+        $( "button" ).click(function() {
 
-        $("button").click(function () {
             button.setAttribute("data-toggle", "modal");
             button.setAttribute("data-target", "#taisyti");
-            document.getElementById("auto-up").value =  array[this.parentNode.parentNode.rowIndex -1].auto;
-            document.getElementById("greitis-up").value = array[this.parentNode.parentNode.rowIndex -1].greitis;
-            document.getElementById("laikas-up").value = array[this.parentNode.parentNode.rowIndex -1].laikas;
+
+            document.getElementById("auto-up").value =  list.auto;
+            document.getElementById("greitis-up").value = list.greitis;
+            document.getElementById("laikas-up").value = list.laikas;
         });
+
+
+
+
 
 
         let cell7 = row.insertCell(6);
@@ -74,26 +78,9 @@ function confirm() {
     }
 }
 
-function update() {
-    let list = {
-        auto: document.getElementById("auto-up").value,
-        greitis: document.getElementById("greitis-up").value,
-        laikas: document.getElementById("laikas-up").value,
-    };
-    array.push(list);
+function getvalue() {
+document.getElementById("auto-up").value = "labas";
+    // this.document.getElementById("auto").value = nr;
+    // this.document.getElementById("greitis").value = s;
+    // this.document.getElementById("laikas").value = t;
 }
-function remove() {
-    $('#myTable tr').click(function(){
-        $(this).remove();
-        return false;
-    });
-}
-//
-//
-//
-// let html =
-//     '<tr>' +
-//     '<td>' + dateFunction() +'</td>' +
-//     '<td>' + list.auto + '</td>'     +
-//     '<td>' + list.greitis + '</td>'  +
-//     '<td>' + list.laikas + '</td>'   +

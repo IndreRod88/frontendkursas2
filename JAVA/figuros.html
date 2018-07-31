@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="figuros.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<input type ="button" onclick="printfigures()" value="Pradiniai duomenys" />
-<input type ="button" onclick="" value="Rasti max" />
+<div id="result" ></div>
+<p></p>
+<script>
+    $(function() {
+
+        $("#button1").click(function() {
+
+            let url = 'https://postit.lt/data/?address=';
+
+            let address = $("#input1").val();
+
+            let  urlasPilnas = url + address;
+
+            $.get(urlasPilnas,function(data) {
+
+                console.log(data);
+            });
+        });
+    });
+
+</script>
+<input id=input1 type="text" />
+<input id=button1 type="button" value="Enter"/>
 </body>
 </html>
