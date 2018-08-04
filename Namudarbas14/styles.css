@@ -1,31 +1,67 @@
 body {
-    font-family: Dejavu;
+    font-family: arial, sans-serif;
+    font-size: 12px;
 }
+
 .container {
     width: 700px;
     height: 400px;
     background-color: white;
 }
+
 .left-side {
     width: 30%;
     float: left;
     text-align: right;
     font-weight: bold;
+    margin: 0 auto;
+
 }
+
 .right-side {
     width: 60%;
     float: left;
+    margin: 0 auto;
 }
+
 .row-form {
-    height: 360px;
+    height: 300px;
     background-color: #f1f1f1;
     border-style: solid;
     border-width: 1px;
     border-color: #e4e4e4;
+    padding-top: 20px;
+    border-radius: 5px;
 }
+
 .input-style {
     width: 200px;
     margin-bottom: 5px;
     margin-left: 5px;
+    margin-right: 5px;
     overflow: hidden;
+    font-size: 10px;
+}
+
+.row-form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.button-submit {
+    border-radius: 10px;
+}
+.clear {
+    clear: both;
+}
+
+.search-form {
+    height: 30px;
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e4e4;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
 }

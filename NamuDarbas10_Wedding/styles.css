@@ -1,8 +1,7 @@
+/*MAIN STYLES*/
+
 * {
     box-sizing: border-box;
-}
-
-body, h1, h2 {
     font-family: "Raleway", sans-serif;
 }
 
@@ -15,45 +14,61 @@ body, html {
 
 p {
     line-height: 2;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 58px;
+}
+
+h2 {
+    font-size: 26px;
+
 }
 
 h1, h2 {
     font-weight: 400;
     margin: 10px 0;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
 }
 
+/*IMAGES*/
 
-.img-couple, .img-flowers {
+.headerImg, .imgFlowers {
     min-height: 100%;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
-.img-couple {
+.headerImg {
     background-image: url("img/wedding_couple.jpg");
 }
 
-.img-couple2 {
+.imgCouple2 {
     background-image: url("img/wedding_couple2.jpg");
-    background-repeat: no-repeat;
     vertical-align: middle;
     height: 506px;
+    object-fit: cover;
+    width: 100%;
+    background-color: #f44336;
+    background-repeat: no-repeat;
 }
 
-.img-flowers {
+.imgFlowers {
     background-image: url("img/flowers.jpg");
 }
 
-.img-location {
+.imgLocation {
     background-image: url("img/wedding_location.jpg");
     height: 600px;
     background-repeat: no-repeat;
 }
 
-.header-block {
-    position: relative;
-}
 
+/*OTHER STYLES*/
 .letters-spicing {
     letter-spacing: 4px;
 }
@@ -78,16 +93,6 @@ h1, h2 {
     padding-bottom: 64px;
 }
 
-.color-background {
-    color: #000;
-    background-color: #ffdddd;
-}
-
-.content {
-    max-width: 980px;
-    margin: auto;
-}
-
 .white-text {
     color: white;
 }
@@ -103,7 +108,7 @@ h1, h2 {
 .wedding-button {
     color: #fff;
     background-color: black;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .padding-12-24 {
@@ -125,14 +130,6 @@ a:link {
 a:hover {
     color: black;
     background-color: lightgrey;
-}
-
-h1 {
-    font-size: 60px;
-}
-
-h2 {
-    font-size: 30px;
 }
 
 .img-margin-64 {
@@ -164,6 +161,7 @@ h2 {
 .footer-padding-16 {
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-bottom: 49px;
 }
 
 .rsv-button {
@@ -176,10 +174,6 @@ h2 {
 
 .margin-kind {
     padding: 16px 18px;
-}
-
-.menu-style {
-    bottom: 0px;
 }
 
 .padding-8-16 {
@@ -212,26 +206,35 @@ h2 {
     border-style: none;
     border-color: initial;
     border-image: initial;
-    outline: 0px;
+    outline: 0;
+    color: #f44336;
+}
+
+.button a {
+    color: red;
+}
+
+.menu-container {
+    background-color: white;
+    width: 100%;
+    padding: 8px 16px;
 }
 
 .navbar {
     overflow: hidden;
-    background-color: dimgrey;
-    position: fixed;
+    background-color: white;
     bottom: 0;
     width: 100%;
-    overflow: hidden;
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .navbar a:hover {
@@ -239,8 +242,30 @@ h2 {
     color: black;
 }
 
-.main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px;
+.navbar a:hover:last-child {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+.menu-style {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    box-sizing: inherit;
+}
+
+.fontSize_36px {
+    font-size: 34px;
+}
+
+.rsv-background {
+    background-color: #ffdddd;
 }

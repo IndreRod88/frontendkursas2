@@ -1,0 +1,35 @@
+*
+
+
+.blueGreen {
+    color: #71B5A8;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.greyColor {
+    color: #7A7A7A;
+}
+
+.horizontLine {
+    background-color: #71B5A8;
+    height: 1px;
+    margin-top: 20px;
+}
+.loginForm {
+    height: 200px;
+    width: 300px;
+    -webkit-box-shadow: 0 0 6px 3px #EAEAEA;
+    -moz-box-shadow: 0 0 6px 3px #EAEAEA;
+    box-shadow: 0 0 6px 3px #EAEAEA;
+}
+.padding15_30{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.display-center {
+    margin: 0 auto;
+}
