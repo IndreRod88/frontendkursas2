@@ -1,5 +1,22 @@
-*
+#AppText {
+    color: #464646;
+}
 
+.strapColorAndSignUp {
+    color: #71B5A8;
+}
+
+.menuNavGreyColor {
+    color: #2D2D2D;
+}
+
+.forgotPassTextColor {
+    color: #52A596;
+}
+
+.awesomeFeaturesDarkTextColor {
+    color: #305F5A;
+}
 
 .blueGreen {
     color: #71B5A8;
@@ -18,18 +35,110 @@
     height: 1px;
     margin-top: 20px;
 }
+
+.horizontLineLoginForm {
+    background-color: #EBEBEB;
+    height: 3px;
+    width: 99%;
+}
+
 .loginForm {
-    height: 200px;
     width: 300px;
     -webkit-box-shadow: 0 0 6px 3px #EAEAEA;
     -moz-box-shadow: 0 0 6px 3px #EAEAEA;
     box-shadow: 0 0 6px 3px #EAEAEA;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
-.padding15_30{
+
+.padding15and30 {
     padding-top: 15px;
     padding-bottom: 30px;
 }
 
+.paddingLeft50 {
+    padding-left: 50px;
+
+}
+
+.paddingTopBottom {
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.paddingRight50 {
+    padding-right: 50px;
+}
+
+.paddingTop10 {
+    padding-top: 10px;
+
+}
+
 .display-center {
     margin: 0 auto;
+}
+
+.paddingBottom15 {
+    padding-bottom: 15px;
+}
+
+.buttonLogin {
+    background-color: #52A596;
+    color: #E8F2F1;
+    border: #C2DBD6 1px solid;
+}
+
+.buttonGetAppStrap {
+    background-color: #448278;
+    color: #D4E2E0;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.awesomeFeaturesBlock {
+    background-color: #52A596;
+    padding: 10px 0 15px 0;
+}
+
+#awesomeFeatures {
+    font-weight: bold;
+    color: white;
+}
+
+.h6whiteText {
+    color: white;
+}
+
+.greyTextFooter {
+    color: #B6B6B6;
+}
+
+.bgFooter {
+    background-color: #282828;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.floatRight {
+    float: right;
 }

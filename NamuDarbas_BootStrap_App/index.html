@@ -11,55 +11,112 @@
 </head>
 <body>
 <div class="container-fluid">
-    <header class="container">
-        <div class="row">
-            <div class="col-md-4 h2"><span style="color: #464646"><strong>App</strong></span><span
-                    style="color:#71B5A8">Strap</span>.
-            </div>
-            <div class="col-md-8">
-            </div>
+    <div class="row">
+        <div class="col-md-4 paddingLeft50"><h2><span id="AppText"><strong>App</strong></span><span
+                class="strapColorAndSignUp">Strap</span>.</h2>
+        </div>
+        <div class="col-md-8 paddingTop10">
 
             <!--NAVIGATION MENU-->
             <nav class="nav">
-                <ul class="nav navbar-nav">
-                    <li><a href="#"><span class="greyColor h6 bold"><i class="fas fa-home"></i></span></a></li>
-                    <li class="active"><a href="#"><span class="greyColor h6">PAGES</span></a></li>
-                    <li><a href="#"><span class="greyColor h6 bold">FEATURES</span></a></li>
-                    <li><a href="#"><span class="greyColor h6">SHOP</span></a></li>
-                    <li><a href="#"><span class="greyColor h6">ELEMENTS</span></a></li>
-                    <li><a href="#"><span class="greyColor h6 ">MEGA MENU</span></a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-search rotate greyColor"></span></a></li>
+                <ul class="nav navbar-nav floatRight paddingRight50">
+                    <li><a href="#"><span class="menuNavGreyColor h6 boldText"><i class="fas fa-home"></i></span></a></li>
+                    <li class="active"><a href="#"><span class="menuNavGreyColor h6 boldText">PAGES</span></a></li>
+                    <li><a href="#"><span class="menuNavGreyColor h6 boldText">FEATURES</span></a></li>
+                    <li><a href="#"><span class="menuNavGreyColor h6 boldText">SHOP</span></a></li>
+                    <li><a href="#"><span class="menuNavGreyColor h6 boldText">ELEMENTS</span></a></li>
+                    <li><a href="#"><span class="menuNavGreyColor h6 boldText ">MEGA MENU</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search rotate menuNavGreyColor boldText"></span></a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
 </div>
-<!--NAVIGATOR MENU-->
-
 
 <div class="horizontLine"></div>
 
-
-<div class="container padding15_30">
+<!--LOGIN BLOCK-->
+<div class="container padding15and30">
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <div class="loginForm display-center"></div>
+            <div class="loginForm display-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3><strong>Login</strong></h3>
+                        <div class="horizontLineLoginForm"></div>
+                        <h6>Not signed up? <a href="#"><span class="strapColorAndSignUp">Sign up here.</span></a></h6>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="usr" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" placeholder="Password"/>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm buttonLogin">Login</button>
+                        <a href="#">
+                            <small>| <span class="forgotPassTextColor">Forgotten Password?</span></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4"></div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-8">
 
 
+<!--AWESOME FEATURES BLOCK-->
+<div class="container-fluid">
+    <div class="row awesomeFeaturesBlock">
+        <div class="col-md-6 paddingLeft50">
+            <h2 id="awesomeFeatures">AWESOME <span class="awesomeFeaturesDarkTextColor"> FEATURES</span></h2>
+            <h6 class="h6whiteText boldText">99,9% Uptime <span class="awesomeFeaturesDarkTextColor">/</span> Free Upgrades
+                <span class="awesomeFeaturesDarkTextColor">/</span> Fully Responsive <span class="awesomeFeaturesDarkTextColor">/</span> Bug Free</h6>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 paddingLeft50">
+            <button type="button" class="btn btn-primary btn-md buttonGetAppStrap boldText">Get AppStrap Today <i
+                    class="fas fa-arrow-right"></i></button>
+        </div>
     </div>
-    <div class="col-md-4">
-
-
-    </div>
-
 </div>
+
+<!--FOOTER -->
+<div class="container-fluid">
+    <div class="row bgFooter paddingTopBottom">
+        <div class="col-md-4 paddingLeft50">
+            <ul>
+                <li class="h6 h6whiteText boldText">CONTACT US</li>
+                <li class="small  greyTextFooter"><i class="fas fa-phone"></i> 0192338 0555333</li>
+                <li class="small  greyTextFooter"><i class="fas fa-envelope"></i> info@apstraptheme.com</li>
+                <li class="small  greyTextFooter"><i class="fas fa-home"></i> Sunshine House Survilia, SLN12, BLU.</li>
+            </ul>
+        </div>
+        <div class="col-md-4 paddingLeft50">
+            <ul>
+                <li class="h6 h6whiteText boldText">ABOUT US</li>
+                <li class="small  greyTextFooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                    fringilla a nunc sit amet cursus. Praesent blandit dictum commodo.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4 paddingLeft50 paddingRight50">
+            <ul>
+                <li class="h6 h6whiteText boldText">NEWSLETTER</li>
+                <li class="small  greyTextFooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                    fringilla a nunc sit amet cursus. Praesent blandit dictum commodo.
+                </li>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-default buttonLogin">Go</button>
+                </span>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/java.js"></script>
