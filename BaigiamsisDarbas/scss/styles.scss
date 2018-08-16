@@ -143,8 +143,14 @@ $topMenufontColor: #777777;
   .col-md-3, .col-md-7 {
     padding: 0;
   }
+  ul li ul {
+    position: relative;
+    z-index: 10;
+  }
 }
-
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 /*SEARCH BAR*/
 input.search-query {
   padding-left: 26px;
@@ -171,7 +177,6 @@ form.form-search:before {
   position: absolute;
   top: 8px;
   left: 8px;
-  color: #51D9D6;
 }
 
 .search-query {
@@ -196,7 +201,6 @@ form.form-search:before {
 }
 
 /*IMAGES CAROUSEL*/
-#imagesCarousel {
   .headerImage {
     background-image: url("../images/test_images/slide1.jpg");
     display: block;
@@ -206,7 +210,6 @@ form.form-search:before {
     padding: 0;
     position: relative;
   }
-}
 
 .carousel-control.left, .carousel-control.right {
   background: none !important;
@@ -253,6 +256,9 @@ form.form-search:before {
     position: absolute;
     box-shadow: 0 0 0 10px transparent;
   }
+  .threeCircleTextBlock {
+    width: 70%;
+  }
   .col-md-4:hover {
     .circleStyle {
       background-color: #1CCDCA;
@@ -284,7 +290,7 @@ form.form-search:before {
 #ourSkills {
   background-color: #3C464D;
   .col-md-6:first-child {
-    padding: 70px 40px 70px 60px;
+    padding: 70px 40px 50px 60px;
   }
   h2 {
     color: white;
@@ -321,7 +327,6 @@ form.form-search:before {
   div.tab-content {
     padding: 20px 25px;
     border-bottom: 1px solid #E5E5E5;
-    border-right: 1px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;
     border-top: 1px solid #E5E5E5;
   }
@@ -338,6 +343,7 @@ form.form-search:before {
     list-style: none;
     a {
       border-top: 1px solid #E5E5E5;
+      border-left:1px solid #E5E5E5;
       border-right: 1px solid #E5E5E5;
       border-radius: 0;
       background-color: #fff;
@@ -393,7 +399,7 @@ form.form-search:before {
 }
 
 /*ACCORDION*/
-#accordion {
+#accordion2 {
   .panel {
     background-color: white;
     border: 1px solid #CECECE;

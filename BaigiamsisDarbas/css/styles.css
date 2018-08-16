@@ -109,6 +109,13 @@ a {
 #mainMenu .col-md-3, #mainMenu .col-md-7 {
   padding: 0; }
 
+#mainMenu ul li ul {
+  position: relative;
+  z-index: 10; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
 /*SEARCH BAR*/
 input.search-query {
   padding-left: 26px;
@@ -132,8 +139,7 @@ form.form-search:before {
   background-position: -48px 0;
   position: absolute;
   top: 8px;
-  left: 8px;
-  color: #51D9D6; }
+  left: 8px; }
 
 .search-query {
   border-radius: 15px;
@@ -154,7 +160,7 @@ form.form-search:before {
   background-color: white; }
 
 /*IMAGES CAROUSEL*/
-#imagesCarousel .headerImage {
+.headerImage {
   background-image: url("../images/test_images/slide1.jpg");
   display: block;
   height: 80vh;
@@ -202,6 +208,8 @@ form.form-search:before {
     transition: all 0.4s ease;
     position: absolute;
     box-shadow: 0 0 0 10px transparent; }
+  #threeCircles .threeCircleTextBlock {
+    width: 70%; }
   #threeCircles .col-md-4:hover .circleStyle {
     background-color: #1CCDCA;
     color: #ffffff;
@@ -225,7 +233,7 @@ form.form-search:before {
 #ourSkills {
   background-color: #3C464D; }
   #ourSkills .col-md-6:first-child {
-    padding: 70px 40px 70px 60px; }
+    padding: 70px 40px 50px 60px; }
   #ourSkills h2 {
     color: white;
     font-family: "Oswald", sans-serif;
@@ -255,7 +263,6 @@ form.form-search:before {
   #whyChooseUs div.tab-content {
     padding: 20px 25px;
     border-bottom: 1px solid #E5E5E5;
-    border-right: 1px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;
     border-top: 1px solid #E5E5E5; }
   #whyChooseUs h4 {
@@ -269,6 +276,7 @@ form.form-search:before {
     list-style: none; }
     #whyChooseUs li a {
       border-top: 1px solid #E5E5E5;
+      border-left: 1px solid #E5E5E5;
       border-right: 1px solid #E5E5E5;
       border-radius: 0;
       background-color: #fff;
@@ -309,33 +317,33 @@ form.form-search:before {
     outline: 0; }
 
 /*ACCORDION*/
-#accordion .panel {
+#accordion2 .panel {
   background-color: white;
   border: 1px solid #CECECE;
   border-radius: 4px; }
 
-#accordion .panel-title a {
+#accordion2 .panel-title a {
   text-decoration: none; }
 
-#accordion .panel-title span {
+#accordion2 .panel-title span {
   font-size: 14px;
   font-weight: 400;
   line-height: 2;
   color: #666666; }
 
-#accordion .panel-title i {
+#accordion2 .panel-title i {
   padding-right: 10px; }
 
-#accordion .glyphicon {
+#accordion2 .glyphicon {
   line-height: 2;
   float: right;
   font-size: 12px;
   font-weight: 100; }
 
-#accordion .panel-active {
+#accordion2 .panel-active {
   background-color: #1ccdca;
   border: 1px solid #1ccdca; }
-  #accordion .panel-active .panel-title a, #accordion .panel-active span {
+  #accordion2 .panel-active .panel-title a, #accordion2 .panel-active span {
     color: white; }
 
 /*CONTACTS */

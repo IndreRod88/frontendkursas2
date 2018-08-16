@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 </head>
 <body>
 
@@ -50,22 +50,39 @@
                 <a href="#"><img src="images/test_images/logo-dark.png" height="45px"></a>
             </div>
             <div class="col-md-7">
-                <nav class="navbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">HOME</a></li>
-                        <li><a href="#">PAGES</a></li>
-                        <li><a href="#">SLIDERS</a></li>
-                        <li><a href="#">SHORTCODES</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">TEAM</a></li>
-                    </ul>
-                </nav>
+                <ul class="nav navbar-nav">
+                    <li class="active dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">HOME</a>
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">HOME PAGE V1</a></li>-->
+                        <!--<li><a href="#">HOME PAGE V2</a></li>-->
+                        <!--<li><a href="#">HOME PAGE V3</a></li>-->
+                        <!--<li><a href="#">HOME PAGE V4</a></li>-->
+                        <!--<li><a href="#">HOME PAGE V5</a></li>-->
+                        <!--<li><a href="#">HOME ONE PAGE</a></li>-->
+                        <!--<li><a href="#">HOME BLOG</a></li>-->
+                        <!--<li><a href="#">HOME WITH SIDE MENU</a></li>-->
+                        <!--<li><a href="#">HOME TRANSPARENT HEADER</a></li>-->
+                        <!--<li><a href="#">HOME MENU BUTTON MODE</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">SLIDERS</a></li>
+                    <li><a href="#">SHORTCODES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">TEAM</a></li>
+                </ul>
             </div>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
 
-
-            <!--PERDARYTI !!!!! -->
+            <!--SEARCH  INPUT  -->
             <div class="col-md-3">
                 <form class="form-search form-inline pull-right">
                     <input type="text" class="search-query" placeholder="Search Here..."/>
@@ -74,16 +91,11 @@
                         </div>
                     </a>
                 </form>
-
-                <!--PERDARYTI !!!-->
-
             </div>
         </div>
     </div>
-</div>
 
-<!--IMAGES SLIDER CAROUSEL-->
-<div id="imagesCarousel" class="container-fluid">
+    <!--IMAGES SLIDER CAROUSEL-->
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
@@ -120,7 +132,8 @@
             <div class="col-md-12">
                 <h3>BEST HTML5 THEME EVER!</h3>
                 <h4>There are many variations of passages of Lorem Ipsum available, but the majority
-                    have suffered alteration in some form, by injected humour of this randomised words which don't look
+                    have suffered alteration in some form, by injected humour of this randomised words which don't
+                    look
                     even slightly
                     believable.</h4>
             </div>
@@ -134,51 +147,42 @@
         <div class="row">
             <div class="col-md-4">
                 <span class="circleStyle"><i class="fas fa-desktop positionAbsolute "></i></span>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9">
-                        <a href="#"><h5>SUPER CODING</h5></a>
-                        <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
-                            majority There
-                            are many variations of demo.</h6>
-                    </div>
+                <div class="threeCircleTextBlock pull-right">
+                    <a href="#"><h5>SUPER CODING</h5></a>
+                    <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
+                        majority There
+                        are many variations of demo.</h6>
                 </div>
             </div>
             <div class="col-md-4">
                 <span class="circleStyle"><i class="fas fa-tablet-alt positionAbsolute"></i></span>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9">
-                        <a href="#"><h5>BEST USER INTERFACE</h5></a>
-                        <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
-                            majority There
-                            are many variations of demo.</h6>
-                    </div>
+                <div class="threeCircleTextBlock pull-right">
+                    <a href="#"><h5>BEST USER INTERFACE</h5></a>
+                    <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
+                        majority There
+                        are many variations of demo.</h6>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <span class="circleStyle"><i class="fas fa-puzzle-piece positionAbsolute"></i></span>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9">
-                        <a href="#"><h5>UNIQUE DESIGN</h5></a>
-                        <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
-                            majority There
-                            are many variations of demo.</h6>
-                    </div>
+                <div class="threeCircleTextBlock pull-right">
+                    <a href="#"><h5>UNIQUE DESIGN</h5></a>
+                    <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
+                        majority There
+                        are many variations of demo.</h6>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!--OUR SKILLS BLOCK-->
 <div id="ourSkills" class="container-fluid">
     <div class="row">
         <div class="col-md-6">
             <h2>OUR SKILLS</h2>
-            <h6>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum has been
+            <h6>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum has
+                been
                 the industry standar dummyy text ever since the when an iunesi known printer of took a galley of
                 type.</h6>
             <div class="progress">
@@ -192,7 +196,7 @@
                 <div class="progress-bar programmingProgressBar" role="progressbar" aria-valuenow="60"
                      aria-valuemin="0" aria-valuemax="100" style="width:60%">
                     <h5>
-                        <spa style="opacity: 1; left: 0;">PROGRAMMING 60%</spa>
+                        <span style="opacity: 1; left: 0;">PROGRAMMING 60%</span>
                     </h5>
                 </div>
             </div>
@@ -236,7 +240,8 @@
                 </ul>
                 <div class="tab-content">
                     <div id="home" class="tab-pane fade in active">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
+                        <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text
+                            Ipsum
                             has
                             been the industry standar dummyy text ever since the when an iunesi known.</p>
                         <div class="row">
@@ -274,7 +279,8 @@
                         </div>
                     </div>
                     <div id="menu2" class="tab-pane fade">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
+                        <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text
+                            Ipsum
                             has
                             been the industry standar dummyy text ever since the when an iunesi known.</p>
                         <div class="row">
@@ -312,7 +318,8 @@
                         </div>
                     </div>
                     <div id="menu3" class="tab-pane fade">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
+                        <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text
+                            Ipsum
                             has
                             been the industry standar dummyy text ever since the when an iunesi known.</p>
                         <div class="row">
@@ -353,7 +360,7 @@
             </div>
             <div class="col-md-6">
                 <h4>WHY WORK WITH US?</h4>
-                <div id=accordion" class="accordion-container">
+                <div id="accordion2" class="accordion-container">
                     <div class="panel-group" id="accordion">
                         <div class="panel">
                             <div class="panel-heading panel-active">
@@ -368,15 +375,20 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="panel-body">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
-                                        in text Ipsum has been the industry standar dummyy text ever since the when an
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry
+                                        Lorem
+                                        in text Ipsum has been the industry standar dummyy text ever since the when
+                                        an
                                         iunesi known.</p>
                                     <p>Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.
-                                        Praesent id enim sit amet odio vulputate eleifend in in tortor standar dummyy
+                                        Praesent id enim sit amet odio vulputate eleifend in in tortor standar
+                                        dummyy
                                         text ever since the when an iunesi known.
                                     </p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
-                                        in text Ipsum has been the industry standar dummyy text ever since the when an
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry
+                                        Lorem
+                                        in text Ipsum has been the industry standar dummyy text ever since the when
+                                        an
                                         iunesi known.
                                     </p>
                                 </div>
@@ -396,18 +408,23 @@
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
-                                        in text Ipsum has been the industry standar dummyy text ever since the when an
+                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry
+                                        Lorem
+                                        in text Ipsum has been the industry standar dummyy text ever since the when
+                                        an
                                         iunesi known.
                                     </p>
                                     <p>
                                         Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.
-                                        Praesent id enim sit amet odio vulputate eleifend in in tortor standar dummyy
+                                        Praesent id enim sit amet odio vulputate eleifend in in tortor standar
+                                        dummyy
                                         text ever since the when an iunesi known.
                                     </p>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
-                                        in text Ipsum has been the industry standar dummyy text ever since the when an
+                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry
+                                        Lorem
+                                        in text Ipsum has been the industry standar dummyy text ever since the when
+                                        an
                                         iunesi known.
                                     </p>
                                 </div>
@@ -427,18 +444,23 @@
                             <div id="collapseThree" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
-                                        in text Ipsum has been the industry standar dummyy text ever since the when an
+                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry
+                                        Lorem
+                                        in text Ipsum has been the industry standar dummyy text ever since the when
+                                        an
                                         iunesi known.
                                     </p>
                                     <p>
                                         Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.
-                                        Praesent id enim sit amet odio vulputate eleifend in in tortor standar dummyy
+                                        Praesent id enim sit amet odio vulputate eleifend in in tortor standar
+                                        dummyy
                                         text ever since the when an iunesi known.
                                     </p>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
-                                        in text Ipsum has been the industry standar dummyy text ever since the when an
+                                        Lorem Ipsum is simply dummy text of the printing and typeseting industry
+                                        Lorem
+                                        in text Ipsum has been the industry standar dummyy text ever since the when
+                                        an
                                         iunesi known.
                                     </p>
                                 </div>
@@ -452,402 +474,402 @@
 </div>
 
 
-    <!--MEET OUR TEAM BLOCK-->
-    <div id="meetOurTeam" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>MEET OUR TEAM</h2>
-                    <span class="line2">
+<!--MEET OUR TEAM BLOCK-->
+<div id="meetOurTeam" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>MEET OUR TEAM</h2>
+                <span class="line2">
                     <span class="iconUserBg iconUser"><i class="far fa-user"></i></span>
                 </span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 ">
-                    <div class="row">
-                        <div class="col-md-9 positionAbsolute">
-                            <h3>We believe in a diverse range of personel to bring creative skills, thoughts, and ideas
-                                to
-                                the table.</h3>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="container">
-            <div id="meetOurTeamSlider" class="carousel slide" data-interval="4000" data-ride="carousel">
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <a href="#"><h5>JOHN BORIS</h5></a>
-                                        <h6>CCO & Product Manager</h6>
-                                        <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
-                                            typesetting
-                                            industry.</h6>
-                                        <nav class="navbar">
-                                            <ul class="nav navbar-nav pull-right">
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-twitter positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-facebook-f positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-google-plus-g positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-linkedin-in positionAbsolute"></i></span>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#"><img src="./images/test_images/team1-large.jpg"></a>
-                                        <div class="imageTransparent"><span class="arrow"><i
-                                                class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <a href="#"><img src="./images/test_images/team2-large.jpg"></a>
-                                        <div class="imageTransparent"><span class="arrow"><i
-                                                class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <a href="#"><h5>NIX MAXWELL</h5></a>
-                                        <h6>Manager</h6>
-                                        <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
-                                            typesetting
-                                            industry.</h6>
-                                        <nav class="navbar ">
-                                            <ul class="nav navbar-nav pull-left">
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-twitter positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-facebook-f positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-google-plus-g positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-linkedin-in positionAbsolute"></i></span></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <a href="#"><h5>JACK SMITH</h5></a>
-                                        <h6>Photogropher</h6>
-                                        <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
-                                            typesetting
-                                            industry.</h6>
-                                        <nav class="navbar">
-                                            <ul class="nav navbar-nav pull-right">
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-twitter positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-facebook-f positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-google-plus-g positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-linkedin-in positionAbsolute"></i></span>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#"><img src="./images/test_images/team3-large.jpg"></a>
-                                        <div class="imageTransparent"><span class="arrow"><i
-                                                class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <a href="#"><img src="./images/test_images/team4-large.jpg"></a>
-                                        <div class="imageTransparent"><span class="arrow"><i
-                                                class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <a href="#"><h5>JOHN DOE</h5></a>
-                                        <h6>Web Designer</h6>
-                                        <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
-                                            typesetting
-                                            industry.</h6>
-                                        <nav class="navbar ">
-                                            <ul class="nav navbar-nav pull-left">
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-twitter positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-facebook-f positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-google-plus-g positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-linkedin-in positionAbsolute"></i></span></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <a href="#"><h5>MIKE EHRMANTRAUT</h5></a>
-                                        <h6>Graphic Designer</h6>
-                                        <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
-                                            typesetting
-                                            industry.</h6>
-                                        <nav class="navbar">
-                                            <ul class="nav navbar-nav pull-right">
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-twitter positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-facebook-f positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-google-plus-g positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle"><i
-                                                        class="fab fa-linkedin-in positionAbsolute"></i></span>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#"><img src="./images/test_images/team5-large.jpg"></a>
-                                        <div class="imageTransparent"><span class="arrow"><i
-                                                class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <a href="#"><img src="./images/test_images/team6-large.jpg"></a>
-                                        <div class="imageTransparent"><span class="arrow"><i
-                                                class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <a href="#"><h5>JOHN SMITH</h5></a>
-                                        <h6>Programmer & SEO</h6>
-                                        <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
-                                            typesetting
-                                            industry.</h6>
-                                        <nav class="navbar ">
-                                            <ul class="nav navbar-nav pull-left">
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-twitter positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-facebook-f positionAbsolute"></i></span></li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-google-plus-g positionAbsolute"></i></span>
-                                                </li>
-                                                <li><span class="socialCirle">
-                                                        <i class="fab fa-linkedin-in positionAbsolute"></i></span></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="row">
+                    <div class="col-md-9 positionAbsolute">
+                        <h3>We believe in a diverse range of personel to bring creative skills, thoughts, and ideas
+                            to
+                            the table.</h3>
                     </div>
                 </div>
-            </div>
-            <!-- Carousel indicators -->
-            <div class="positionRelative">
-                <ol class="carousel-indicators">
-                    <li data-target="#meetOurTeamSlider" data-slide-to="0" class="active"></li>
-                    <li data-target="#meetOurTeamSlider" data-slide-to="1"></li>
-                    <li data-target="#meetOurTeamSlider" data-slide-to="2"></li>
-                </ol>
             </div>
         </div>
     </div>
-
-
-    <!--OUR SERVICES BLOCK-->
-    <div id="ourServices" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>OUR SERVICES</h2>
-                    <span class="line">
-                    <span class="dot"></span>
-                </span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+    <div class="container">
+        <div id="meetOurTeamSlider" class="carousel slide" data-interval="4000" data-ride="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
                     <div class="row">
-                        <div class="col-md-2">
-                            <span class="iconCircleStyle"><i class="fas fa-desktop positionAbsolute"></i></span>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <a href="#"><h5>JOHN BORIS</h5></a>
+                                    <h6>CCO & Product Manager</h6>
+                                    <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                        typesetting
+                                        industry.</h6>
+                                    <nav class="navbar">
+                                        <ul class="nav navbar-nav pull-right">
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-twitter positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-facebook-f positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-google-plus-g positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-linkedin-in positionAbsolute"></i></span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#"><img src="./images/test_images/team1-large.jpg"></a>
+                                    <div class="imageTransparent"><span class="arrow"><i
+                                            class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-10">
-                            <h5>PREMIUM SLIDERS INCLUDED</h5>
-                            <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
-                                majority.</h6>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#"><img src="./images/test_images/team2-large.jpg"></a>
+                                    <div class="imageTransparent"><span class="arrow"><i
+                                            class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#"><h5>NIX MAXWELL</h5></a>
+                                    <h6>Manager</h6>
+                                    <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                        typesetting
+                                        industry.</h6>
+                                    <nav class="navbar ">
+                                        <ul class="nav navbar-nav pull-left">
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-twitter positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-facebook-f positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-google-plus-g positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-linkedin-in positionAbsolute"></i></span></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="item">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <a href="#"><h5>JACK SMITH</h5></a>
+                                    <h6>Photogropher</h6>
+                                    <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                        typesetting
+                                        industry.</h6>
+                                    <nav class="navbar">
+                                        <ul class="nav navbar-nav pull-right">
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-twitter positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-facebook-f positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-google-plus-g positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-linkedin-in positionAbsolute"></i></span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#"><img src="./images/test_images/team3-large.jpg"></a>
+                                    <div class="imageTransparent"><span class="arrow"><i
+                                            class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#"><img src="./images/test_images/team4-large.jpg"></a>
+                                    <div class="imageTransparent"><span class="arrow"><i
+                                            class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#"><h5>JOHN DOE</h5></a>
+                                    <h6>Web Designer</h6>
+                                    <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                        typesetting
+                                        industry.</h6>
+                                    <nav class="navbar ">
+                                        <ul class="nav navbar-nav pull-left">
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-twitter positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-facebook-f positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-google-plus-g positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-linkedin-in positionAbsolute"></i></span></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <a href="#"><h5>MIKE EHRMANTRAUT</h5></a>
+                                    <h6>Graphic Designer</h6>
+                                    <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                        typesetting
+                                        industry.</h6>
+                                    <nav class="navbar">
+                                        <ul class="nav navbar-nav pull-right">
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-twitter positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-facebook-f positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-google-plus-g positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle"><i
+                                                    class="fab fa-linkedin-in positionAbsolute"></i></span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#"><img src="./images/test_images/team5-large.jpg"></a>
+                                    <div class="imageTransparent"><span class="arrow"><i
+                                            class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#"><img src="./images/test_images/team6-large.jpg"></a>
+                                    <div class="imageTransparent"><span class="arrow"><i
+                                            class="fas fa-arrows-alt-v positionAbsolute"></i></span></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#"><h5>JOHN SMITH</h5></a>
+                                    <h6>Programmer & SEO</h6>
+                                    <h6>Lorem Ipsum is simply dummy to text of the printing and Lorem off
+                                        typesetting
+                                        industry.</h6>
+                                    <nav class="navbar ">
+                                        <ul class="nav navbar-nav pull-left">
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-twitter positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-facebook-f positionAbsolute"></i></span></li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-google-plus-g positionAbsolute"></i></span>
+                                            </li>
+                                            <li><span class="socialCirle">
+                                                        <i class="fab fa-linkedin-in positionAbsolute"></i></span></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel indicators -->
+        <div class="positionRelative">
+            <ol class="carousel-indicators">
+                <li data-target="#meetOurTeamSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#meetOurTeamSlider" data-slide-to="1"></li>
+                <li data-target="#meetOurTeamSlider" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<!--OUR SERVICES BLOCK-->
+<div id="ourServices" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>OUR SERVICES</h2>
+                <span class="line">
+                    <span class="dot"></span>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        <span class="iconCircleStyle"><i class="fas fa-desktop positionAbsolute"></i></span>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>PREMIUM SLIDERS INCLUDED</h5>
+                        <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
+                            majority.</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
                                     <span class="iconCircleStyle"><i
                                             class="fas fa-tablet-alt positionAbsolute"></i></span>
-                        </div>
-                        <div class="col-md-10">
-                            <h5>100% RESPONSIVE LAYOUT</h5>
-                            <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
-                                majority.</h6>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span class="iconCircleStyle"><i class="fas fa-flask positionAbsolute"></i></span>
-                        </div>
-                        <div class="col-md-10">
-                            <h5>POWERFUL PERFORMANCE</h5>
-                            <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
-                                majority.</h6>
-                        </div>
+                    <div class="col-md-10">
+                        <h5>100% RESPONSIVE LAYOUT</h5>
+                        <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
+                            majority.</h6>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./images/test_images/looking1.jpg">
+                <div class="row">
+                    <div class="col-md-2">
+                        <span class="iconCircleStyle"><i class="fas fa-flask positionAbsolute"></i></span>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>POWERFUL PERFORMANCE</h5>
+                        <h6>There are many variations of demo text passed sages of Lorem Ipsum available the
+                            majority.</h6>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./images/test_images/looking1.jpg">
             </div>
         </div>
     </div>
+</div>
 
 
-    <div id="contacts" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>CONTACT US</h2>
-                    <span class="line">
+<div id="contacts" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>CONTACT US</h2>
+                <span class="line">
                     <span class="dot"></span>
                 </span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>
-                        <span><i class="far fa-envelope-open"></i>GET ON TOUCH</span>
-                    </h5>
-                </div>
-                <form id="contactForm" class="form-horizontal">
-                    <div class="form-group">
-                        <label class="col-sm-2 ">Name<span style="color: red">*</span></label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="Full Name" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2">Email <span style="color: red">*</span></label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" placeholder="mail@sitename.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2">Subject</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2">Message <span style="color: red">*</span></label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default"><i class="fas fa-check"></i>Send Your Message
-                            </button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
-
-    <!--OUR LOCATION-->
-    <div id="ourLocation" class="container-fluid">
-        <div class="container">
-            <h2>OUR LOCATION</h2>
-        </div>
-        <div id="map" style="width:100%;height:400px;"></div>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK96P48dY3qAjv6t59QGWnhiDe_8OvDT4&callback=initMap">
-        </script>
-    </div>
-
-    <!--FOOTER-->
-    <div id="footer" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>COMPANY INFO</h5>
-                    <div><img src="images/test_images/logo-light.png"></div>
-                    <h6>There are many Purchase Now There are many variations of passages of Lorem Ipsum available, but
-                        the
-                        majority.</h6>
-                    <a href="#" class="blackBg">
-                        <i class="fas fa-chevron-right"></i>
-                        <span>Read More</span>
-                    </a>
-                    <div class="footerLine"></div>
-                    <h5>NEWSLETTER SIGNUP</h5>
-                    <h6>By subscribing to our mailing list you will always be update with the latest news:</h6>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Your Email Here..." required>
-                            <a href="#" class="input-group-addon"><span><i class="far fa-paper-plane"></i></span></a>
-                        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5>
+                    <span><i class="far fa-envelope-open"></i>GET ON TOUCH</span>
+                </h5>
+            </div>
+            <form id="contactForm" class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 ">Name<span style="color: red">*</span></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Full Name" required>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <h5>RECENT POSTS</h5>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <img src="./images/test_images/blog5.jpg" width="60%">
-                            <h6><i>Tutorial, Videos</i></h6>
-                        </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Email <span style="color: red">*</span></label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="mail@sitename.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Subject</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2">Message <span style="color: red">*</span></label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" required></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default"><i class="fas fa-check"></i>Send Your Message
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--OUR LOCATION-->
+<div id="ourLocation" class="container-fluid">
+    <div class="container">
+        <h2>OUR LOCATION</h2>
+    </div>
+    <div id="map" style="width:100%;height:400px;"></div>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK96P48dY3qAjv6t59QGWnhiDe_8OvDT4&callback=initMap">
+    </script>
+</div>
+
+<!--FOOTER-->
+<div id="footer" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>COMPANY INFO</h5>
+                <div><img src="images/test_images/logo-light.png"></div>
+                <h6>There are many Purchase Now There are many variations of passages of Lorem Ipsum available, but
+                    the
+                    majority.</h6>
+                <a href="#" class="blackBg">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Read More</span>
+                </a>
+                <div class="footerLine"></div>
+                <h5>NEWSLETTER SIGNUP</h5>
+                <h6>By subscribing to our mailing list you will always be update with the latest news:</h6>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your Email Here..." required>
+                        <a href="#" class="input-group-addon"><span><i class="far fa-paper-plane"></i></span></a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-3">
+                <h5>RECENT POSTS</h5>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="./images/test_images/blog5.jpg" width="60%">
+                        <h6><i>Tutorial, Videos</i></h6>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/java.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/java.js"></script>
 </body>
 </html>
