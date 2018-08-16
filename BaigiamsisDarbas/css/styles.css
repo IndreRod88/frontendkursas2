@@ -56,7 +56,7 @@ a {
   padding-top: 4px;
   padding-bottom: 4px; }
   #topMenu .container {
-    padding: 0 65px 0 65px; }
+    padding: 0 50px 0 50px; }
 
 #topMenu a, a:hover, a:link, a:visited, a:active, a:link {
   text-decoration: none;
@@ -83,7 +83,7 @@ a {
 
 /* LOGO AND MAIN MENU */
 #mainMenu .container {
-  padding: 15px 65px 15px 65px; }
+  padding: 15px 50px 15px 50px; }
 
 #mainMenu .logo {
   background-image: url("../images/test_images/logo-dark.png");
