@@ -16,11 +16,11 @@
     <li><a href="#">Archived News</a></li>
 </ul>
     <ul class="rightIcons">
-        <li><a href="#"><i class="fab fa-linkedin-in"></i> </a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li><a href="#"><i class="fas fa-rss"></i></a></li>
+        <li class="greyCircle"><a href="#"><i class="fab fa-linkedin-in positionAbsolute"></i> </a></li>
+        <li class="greyCircle"><a href="#"><i class="fab fa-twitter positionAbsolute"></i></a></li>
+        <li class="greyCircle"><a href="#"><i class="fab fa-pinterest positionAbsolute"></i></a></li>
+        <li class="greyCircle"><a href="#"><i class="fab fa-google-plus-g positionAbsolute"></i></a></li>
+        <li class="greyCircle"><a href="#"><i class="fas fa-rss positionAbsolute"></i></a></li>
     </ul>
 </div>
 <div class="menu-top">
@@ -154,18 +154,11 @@
     </div>
     <div class="column-footer">
         <div class="footer-text-12">CONTACT US</div>
-        <form action="" target="_blank">
-            <br>
-            <input class="contacts-us-form" type="text" name="tname" value="Name">
-            <br>
-            <br>
-            <input class="contacts-us-form" type="text" name="email" value="Email">
-            <br>
-            <br>
-            <input class="contacts-us-form" type="text" name="subject" value="Subject">
-            <br>
-            <br>
-            <textarea class="contacts-message" type="text" name="message">Message
+        <form class="contactsForm" target="_blank">
+            <input class="contacts-us-form" type="text" name="tname" value="Name" required>
+            <input class="contacts-us-form" type="text" name="email" value="Email" required>
+            <input class="contacts-us-form" type="text" name="subject" value="Subject" required>
+            <textarea class="contacts-message" type="text" name="message" required>Message
                 </textarea>
             <input class="submit-button" type="submit" value="SUBMIT">
         </form>

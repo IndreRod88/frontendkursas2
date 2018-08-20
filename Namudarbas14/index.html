@@ -11,12 +11,12 @@
         <div class="row-form">
             <div class="left-side">Title</div>
             <div class="right-side">
-                <input class="input-style" type="text" placeholder="Select one of enter you own">
+                <input class="input-style" type="text" placeholder="Select one of enter you own" required>
             </div>
             <br>
             <div class="left-side">Name</div>
             <div class="right-side">
-                <input class="input-style" type="text" placeholder="John Doe">
+                <input class="input-style" type="text" placeholder="John Doe" required>
 
             </div>
             <br>
@@ -28,7 +28,7 @@
             <br>
             <div class="left-side">Email address</div>
             <div class="right-side">
-                <input class="input-style" type="text" placeholder="abs@gmail.com">
+                <input class="input-style" type="text" placeholder="abs@gmail.com" required>
             </div>
             <br>
             <div class="left-side">Your website</div>
@@ -39,40 +39,42 @@
             <div class="left-side">Nr. of items to order</div>
             <div class="right-side">
                 <input class="input-style" style="width: 40px" placeholder="6" type="number" min="1" max="10" value="6 "
-                       step="1">(1-10)
+                       step="1" required>(1-10)
             </div>
             <br>
             <div class="left-side">Length</div>
             <div class="right-side">
-                <input type="range" min=0 max=10 step=0.10 value=1 name="temp-slider">1m (in 10cm incresements)
+                <input type="range" min=0 max=10 step=0.10 value=1 name="temp-slider" required>1m (in 10cm incresements)
             </div>
             <br>
             <div class="left-side">Delivery date</div>
             <div class="right-side">
                 <input class="input-style" type="date" min="1" max="10" value="2016-11-23"
-                       step="1">
+                       step="1" required>
             </div>
             <div class="left-side">Time of delivery</div>
             <div class="right-side">
                 <input class="input-style" type="time" min="1" max="10" value="21:00"
-                       step="1">
+                       step="1" required>
             </div>
             <div class="left-side">Color of the item</div>
             <div class="right-side">
                 <input class="input-style" style="width: 20px" placeholder="6" type="color" min="1" max="10"
                        value="#ff0000"
-                       step="1">
+                       step="1" required>
                 <p></p>
                 <input class="button-submit clear" type="button" value="Submit"/>
             </div>
         </div>
     </form>
+    <form>
 <div class="search-form">
     <div class="left-side">Search</div>
     <div class="right-side">
         <input class="input-style" style="width: 150px; border-radius: 15px" type="text">
         <input class="button-submit clear" type="button" value="Go"/>
     </div>
+    </form>
 </div>
 </div>
 </body>

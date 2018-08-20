@@ -134,6 +134,11 @@ h3 {
     margin-right: 5px;
 }
 
+input.search-bar,
+input.contacts-us-form,
+textarea.contacts-message{
+    text-indent: 10px;
+}
 .button-search {
     font-size: 12px;
     background-color: #0099ff;
@@ -173,7 +178,7 @@ h3 {
     height: 58px;
     margin: 0;
     float: left;
-    width: 50%;
+    width: 80%;
 
 }
 
@@ -192,26 +197,49 @@ h3 {
 }
 
 .rightIcons {
-    overflow: hidden;
     background-color: #333;
     height: 58px;
     margin: 0;
-    width: 50%;
+    width: 20%;
+    float: right;
+}
+
+.rightIcons li {
+    margin-left: 15px;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
 .rightIcons a {
     float: right;
     display: block;
-    color: #9f9f9f;
-    padding: 14px 16px;
+    color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     text-align: right;
 }
 
-.rightIcons a:hover {
-    color: white;
+.greyCircle:hover {
+    background-color: #db4a39;
+    cursor: pointer;
+}
+
+.greyCircle {
+    width: 20px;
+    height: 20px;
+    background-color: #787878;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+}
+
+.positionAbsolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .column {
@@ -219,6 +247,7 @@ h3 {
     width: 50%;
     padding: 15px;
 }
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -485,6 +514,7 @@ p {
 .footer-text-12 {
     font-size: 12px;
     color: white;
+    padding-bottom: 20px;
 }
 
 .footer-block-215 {
@@ -649,7 +679,12 @@ li.footer-container {
     margin-left: 16px;
     margin-bottom: 30px;
 }
+
 .menu-top {
     position: relative;
     height: 100px;
+}
+.contactsForm input {
+    margin-bottom: 15px;
+    line-height: 28px;
 }
